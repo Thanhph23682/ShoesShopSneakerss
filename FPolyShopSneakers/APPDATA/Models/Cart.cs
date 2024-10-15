@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    internal class Products
+    internal class Cart
     {
     }
 }
