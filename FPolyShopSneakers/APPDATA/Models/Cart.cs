@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    internal class Cart
+    public partial class Cart
     {
+        public Cart()
+        {
+            CartItems = new HashSet<CartItems>();
+
+        }
+
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public DateTime UpdateDate { get; set; }
+        public virtual Customer Customers { get; set; }
+        public virtual ICollection<CartItems> CartItems { get; set; }
+
     }
 }
