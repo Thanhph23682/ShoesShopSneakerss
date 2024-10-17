@@ -11,13 +11,14 @@ namespace APPDATA.Models
         public Cart()
         {
             CartItems = new HashSet<CartItems>();
+            Customers = new HashSet<Customer>();
 
         }
 
         public int Id { get; set; }
         public int CustomerId { get; set; }
         public DateTime UpdateDate { get; set; }
-        public virtual Customer Customers { get; set; }
+        public virtual ICollection <Customer> Customers { get; set; }
         public virtual ICollection<CartItems> CartItems { get; set; }
 
     }
