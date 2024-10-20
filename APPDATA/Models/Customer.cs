@@ -30,4 +30,3 @@ namespace APPDATA.Models
         public virtual ICollection<Cart> Carts { get; set; }
     }
 }
-}
