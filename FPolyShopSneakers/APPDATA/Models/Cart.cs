@@ -7,14 +7,9 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    public partial class Cart
+    public  class Cart
     {
-        public Cart()
-        {
-            CartItems = new HashSet<CartItems>();
-            
-
-        }
+        
         [Key]
 
         public int Id { get; set; }

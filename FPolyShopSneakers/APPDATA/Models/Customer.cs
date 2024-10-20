@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    public partial class Customer
+    public  class Customer
     {
-        public Customer()
-        {
-            Carts = new HashSet<Cart>();
-            CreateDate = DateTime.Now; // Đặt ngày tạo mặc định là thời điểm hiện tại
-            Status = true; // Đặt trạng thái mặc định là hoạt động
-        }
+        
+        [Key]
 
         public int Id { get; set; }
         public int RoleId { get; set; }
@@ -28,6 +25,7 @@ namespace APPDATA.Models
         public bool Status { get; set; }
 
         public virtual ICollection<Cart> Carts { get; set; }
+        public virtual Role Role { get; set; } = null;
     }
 }
-}
+

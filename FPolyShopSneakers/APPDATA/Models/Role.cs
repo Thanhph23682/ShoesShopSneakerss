@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,8 @@ namespace APPDATA.Models
 {
     public class Role
     {
-        public Role()
-        {
-            Users = new HashSet<User>();
-            Customers = new HashSet<Customer>();
-        }
+        
+        [Key]
         public int Id { get; set; }
         public string RoleName { get; set; } = null;
 
