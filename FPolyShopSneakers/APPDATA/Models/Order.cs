@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,5 +21,8 @@ namespace APPDATA.Models
         public string order_Phone { get; set; }
         public string order_Name { get; set; }
         public string order_Address { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
+        //public User? User { get; set; }
+        //public Customer? Customer { get; set; }
     }
 }

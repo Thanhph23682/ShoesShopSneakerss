@@ -12,5 +12,6 @@ namespace APPDATA.Models
         public int idVoucher { get; set; }
         public int Quantity { get; set; }
         public int Status { get; set; }
+        public Voucher? Voucher { get; set; }
     }
 }

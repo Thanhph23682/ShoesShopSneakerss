@@ -12,6 +12,6 @@ namespace APPDATA.Models
         public int orderId { get; set; }
         public int quantity { get; set; }
         public decimal amount_Price { get; set; }
-
+        public Order? Order { get; set; }
     }
 }

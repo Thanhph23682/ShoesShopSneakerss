@@ -10,6 +10,7 @@ namespace APPDATA.Models
     {
         public int Id { get; set; }
         public int idCustomer { get; set; }
+        public int idUser { get; set; }
         public DateTime CreatDate { get; set; }
 
         public DateTime StartDate { get; set; }
@@ -19,5 +20,7 @@ namespace APPDATA.Models
         public string? Conditions { get; set; }
         public string PercentDiscount { get; set; }
         public int status { get; set; }
+        public List<VoucherDetail> VoucherDetails { get; set; }
+        //public Customer? Customer { get; set; }
     }
 }
