@@ -1,0 +1,6 @@
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.AssemblyReference.cache
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfoInputs.cache
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
+C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FPT\\source\\repos\\ShoesShopSneakerss2\\APPMVC\\APPMVC.csproj": {}
+    "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FPT\\source\\repos\\ShoesShopSneakerss2\\APPMVC\\APPMVC.csproj": {
+    "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT\\source\\repos\\ShoesShopSneakerss2\\APPMVC\\APPMVC.csproj",
+        "projectUniqueName": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
         "projectName": "APPMVC",
-        "projectPath": "C:\\Users\\FPT\\source\\repos\\ShoesShopSneakerss2\\APPMVC\\APPMVC.csproj",
-        "packagesPath": "C:\\Users\\FPT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT\\source\\repos\\ShoesShopSneakerss2\\APPMVC\\obj\\",
+        "projectPath": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\FPT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.35, )"
@@ -63,6 +68,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.35, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.18, )"
             }
           },
           "imports": [
@@ -71,7 +80,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

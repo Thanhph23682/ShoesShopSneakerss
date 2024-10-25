@@ -18,10 +18,10 @@ namespace APPDATA.Configurations
             builder.ToTable("Customer");
             // Mối quan hệ với Role
             builder.HasKey(p => p.Id);
-            builder.HasOne(p => p.Role) 
-                  .WithOne() 
-                  .HasForeignKey<Customer>(p => p.RoleId)
-                  .HasConstraintName("FK_Customer_Role");
+            //builder.HasOne(p => p.Role) 
+            //      .WithOne() 
+            //      .HasForeignKey<Customer>(p => p.RoleId)
+            //      .HasConstraintName("FK_Customer_Role");
         }
     }
 }
