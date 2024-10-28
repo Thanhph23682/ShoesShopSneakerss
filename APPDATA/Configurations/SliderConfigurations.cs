@@ -15,7 +15,6 @@ namespace APPDATA.Configurations
         {
             builder.ToTable("Slider");
             builder.HasKey(p => p.SliderID);
-
         }
     }
 }

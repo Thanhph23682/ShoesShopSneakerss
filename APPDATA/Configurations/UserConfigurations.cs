@@ -14,7 +14,7 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable  ("User");
-            builder.HasMany(p => p.orders).WithOne(p => p.user).HasForeignKey(p => p.UserId).HasConstraintName("FK_user_Order").OnDelete(DeleteBehavior.NoAction);
+            builder.HasMany(p => p.Orders).WithOne(p => p.User).HasForeignKey(p => p.UserId).HasConstraintName("FK_user_Order").OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

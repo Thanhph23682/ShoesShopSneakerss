@@ -16,8 +16,7 @@ namespace APPDATA.Configurations
         {
             builder.ToTable("Category");
             builder.HasKey(p => p.CategoryID);  // Thiết lập pk
-            builder.HasMany(p => p.products).WithOne(p => p.category).HasForeignKey(p => p.categoryID).HasConstraintName("FK_sanpham_danhmuc");
+            builder.HasMany(p => p.Products).WithOne(p => p.Category).HasForeignKey(p => p.CategoryID).HasConstraintName("FK_sanpham_danhmuc");
         }
     }
-   
 }

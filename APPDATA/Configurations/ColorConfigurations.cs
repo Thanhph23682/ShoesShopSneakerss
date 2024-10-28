@@ -14,8 +14,8 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<Color> builder)
         {
             builder.ToTable("Color");
-            builder.HasKey(p => p.colorID);
-            builder.HasMany(p => p.ProductVariants).WithOne(p => p.color).HasForeignKey(p => p.colorID).HasConstraintName("FK_productVariant_Color");
+            builder.HasKey(p => p.ColorID);
+            builder.HasMany(p => p.ProductVariants).WithOne(p => p.Color).HasForeignKey(p => p.ColorID).HasConstraintName("FK_productVariant_Color");
         }
     }
 }

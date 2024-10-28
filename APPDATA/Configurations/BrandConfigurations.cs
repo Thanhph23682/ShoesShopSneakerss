@@ -15,12 +15,7 @@ namespace APPDATA.Configurations
         {
             builder.ToTable("Brand");
             builder.HasKey(p => p.BrandId);
- 
-   builder.HasMany(p => p.Products).WithOne(p => p.Brand).HasForeignKey(p => p.brandID).HasConstraintName("FK_ThuongHieu_SanPham");
-
-
-
-
-  }
- }
+            builder.HasMany(p => p.Products).WithOne(p => p.Brand).HasForeignKey(p => p.BrandID).HasConstraintName("FK_ThuongHieu_SanPham");
+        }
+    }
 }

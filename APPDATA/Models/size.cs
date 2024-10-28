@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    public class size
+    public class Size
     {
         [Key]
-        public int sizeID { get; set; }
-        public int nameSize { get; set; }
+        public int SizeID { get; set; }
+        public int NameSize { get; set; }
         public ICollection<ProductVariant>? ProductVariants { get; set; }
 
     }

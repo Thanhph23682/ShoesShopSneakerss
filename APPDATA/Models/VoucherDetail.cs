@@ -11,10 +11,10 @@ namespace APPDATA.Models
     {
         [Key]
 
-        public int Id { get; set; }
-        public int idVoucher { get; set; }
+        public int ID { get; set; }
+        public int VoucherID { get; set; }
         public int Quantity { get; set; }
         public int Status { get; set; }
-        public virtual Voucher? voucher { get; set; }
+        public virtual Voucher? Voucher { get; set; }
     }
 }

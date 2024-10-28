@@ -15,7 +15,7 @@ namespace APPDATA.Configurations
         {
             builder.ToTable("Payment");
             builder.HasKey(p => p.PaymentID);
-   builder.HasOne(p => p.order).WithMany(p => p.payments).HasForeignKey(p => p.PaymentID).HasConstraintName("Fk_Payment_Order");
+            builder.HasOne(p => p.Order).WithMany(p => p.Payments).HasForeignKey(p => p.OrderID).HasConstraintName("Fk_Payment_Order");
         }
     }
 }

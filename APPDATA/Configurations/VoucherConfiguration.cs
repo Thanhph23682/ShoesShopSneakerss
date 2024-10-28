@@ -13,9 +13,9 @@ namespace APPDATA.Configurations
     {
         public void Configure(EntityTypeBuilder<Voucher> builder)
         {
-            builder.HasKey(c => c.Id);
-   builder.ToTable("Voucher");
-            builder.HasMany(p => p.voucherDetails).WithOne(p => p.voucher).HasForeignKey(p => p.idVoucher).HasConstraintName("FK_voucher_voucherDetails");
+            builder.HasKey(c => c.ID);
+            builder.ToTable("Voucher");
+            builder.HasMany(p => p.VoucherDetails).WithOne(p => p.Voucher).HasForeignKey(p => p.VoucherID).HasConstraintName("FK_voucher_voucherDetails");
         }
     }
 }

@@ -15,7 +15,6 @@ namespace APPDATA.Configurations
         {
             builder.ToTable("Contact");
             builder.HasKey(p => p.ContactID);
-
         }
     }
 }

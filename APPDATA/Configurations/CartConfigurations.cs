@@ -18,8 +18,7 @@ namespace APPDATA.Configurations
             // Mối quan hệ với Customer
             builder.HasOne(p => p.Customers).WithMany(p => p.Carts).HasForeignKey(p => p.CustomerId).HasConstraintName("FK_Cart_Customer");
             // Mối quan hệ với CartItems
-            
-            builder.HasMany(p => p.CartItems).WithOne(p => p.Cart).HasForeignKey(p => p.Id).HasConstraintName("FK_cart_CartItems");
+            builder.HasMany(p => p.CartItems).WithOne(p => p.Cart).HasForeignKey(p => p.CartId).HasConstraintName("FK_cart_CartItems");
         }
     }
 }

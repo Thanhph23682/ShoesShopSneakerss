@@ -10,11 +10,11 @@ namespace APPDATA.Models
     public class OrderDetail
     {
         [Key]
-        public int Id { get; set; }
-        public int orderId { get; set; }
-        public int quantity { get; set; }
-        public decimal amount_Price { get; set; }
-        public virtual Order? order { get; set; }
+        public int ID { get; set; }
+        public int OrderId { get; set; }
+        public int Quantity { get; set; }
+        public decimal AmountPrice { get; set; }
+        public virtual Order? Order { get; set; }
         public ICollection<ProductVariant>? ProductVariants { get; set; }
 
     }

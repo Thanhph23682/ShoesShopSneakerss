@@ -1,13 +1,13 @@
-﻿using APPDATA.MyDbContext;
+﻿using APPDATA.DB;
 using Microsoft.EntityFrameworkCore;
 
 namespace APPAPI.Services
 {
     public class CRUDapi<T> where T : class
     {
-        Context _context;
+        ShopDbContext _context;
         DbSet<T> _dbSet;
-        public CRUDapi(Context context, DbSet<T> dbset)
+        public CRUDapi(ShopDbContext context, DbSet<T> dbset)
         {
            _context = context;
             _dbSet = dbset;

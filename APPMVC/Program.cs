@@ -1,10 +1,10 @@
-using APPDATA.MyDbContext;
+using APPDATA.DB;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<Context>();
+builder.Services.AddDbContext<ShopDbContext>();
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 

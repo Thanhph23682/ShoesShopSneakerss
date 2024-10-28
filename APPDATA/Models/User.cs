@@ -12,8 +12,8 @@ namespace APPDATA.Models
      
         [Key]
 
-        public int Id { get; set; }
-        public int RoleId { get; set; }
+        public int ID { get; set; }
+        public int RoleID { get; set; }
         public string UserName { get; set; }
         public string FullName { get; set; }
         public string Password { get; set; }
@@ -22,7 +22,7 @@ namespace APPDATA.Models
         public bool? Status { get; set; }
 
         public virtual Role Role { get; set; } = null;
-        public ICollection<Order>? orders { get; set; }
+        public ICollection<Order>? Orders { get; set; }
 
 
     }

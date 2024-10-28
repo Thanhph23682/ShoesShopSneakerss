@@ -13,7 +13,7 @@ namespace APPDATA.Models
         
         [Key]
 
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string RoleName { get; set; } = null;
 
         public string? Description { get; set; }

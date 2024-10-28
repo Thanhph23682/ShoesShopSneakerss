@@ -14,16 +14,14 @@ namespace APPDATA.Configurations
     {
         public void Configure(EntityTypeBuilder<VoucherDetail> builder)
         {
- 
-   builder.ToTable("VoucherDetails");
-
-   builder.HasKey(c => c.Id);
-   //builder.HasOne(p => p.Role)
-   //               .WithMany(p => p.Users)
-   //               .HasForeignKey(p => p.RoleId)
-   //               .HasConstraintName("FK_User_Role");
-   builder.HasOne(p => p.voucher).WithMany(p => p.voucherDetails).HasForeignKey(p => p.idVoucher).HasConstraintName("FK_VoucherDetail_Voucher");
-
-  }
+            builder.ToTable("VoucherDetails");
+            builder.HasKey(c => c.ID);
+            //builder.HasOne(p => p.Role)
+            //               .WithMany(p => p.Users)
+            //               .HasForeignKey(p => p.RoleId)
+            //               .HasConstraintName("FK_User_Role");
+            builder.HasOne(p => p.Voucher).WithMany(p => p.VoucherDetails).HasForeignKey
+                (p => p.VoucherID).HasConstraintName("FK_VoucherDetail_Voucher");
+        } 
     }
 }

@@ -21,7 +21,7 @@ namespace APPDATA.DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
         {
-            optionsBuilder.UseSqlServer(@"Data Source=dien-sql-vao-day;Initial Catalog=ShoeShop;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=MSI\SQLEXPRESS01;Initial Catalog=ShoeShop;Integrated Security=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -40,7 +40,7 @@ namespace APPDATA.DB
         public DbSet<Products> Products { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<ProductVariant> ProductVariants { get; set; }
-        public DbSet<size> Sizes { get; set; }
+        public DbSet<Size> Sizes { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<VoucherDetail> VoucherDetails { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }

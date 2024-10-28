@@ -15,7 +15,7 @@ namespace APPDATA.Models
         public string? Description { get; set; }
         public string? Images { get; set; }
         public string? Alias { get; set; }
-        public int status { get; set; }
-        public virtual ICollection<Products>? products { get; set; }
+        public int Status { get; set; }
+        public virtual ICollection<Products>? Products { get; set; }
     }
 }

@@ -10,9 +10,9 @@ namespace APPDATA.Models
     public class Color
     {
         [Key]
-        public int colorID { get; set; }
-        public string? colorName { get; set; }
-        public string? colorValue { get; set; }
+        public int ColorID { get; set; }
+        public string? ColorName { get; set; }
+        public string? ColorValue { get; set; }
         public ICollection<ProductVariant>? ProductVariants { get; set; }
 
     }

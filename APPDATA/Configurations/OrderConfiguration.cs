@@ -15,13 +15,9 @@ namespace APPDATA.Configurations
         {
             builder.HasKey(c => c.Id);
             builder.ToTable("Order");
-
-            builder.HasMany(p => p.payments).WithOne(p => p.order).HasForeignKey(p => p.PaymentID).HasConstraintName("FK_Payment_Orders");
-
-            builder.HasMany(p => p.OrderDetails).WithOne(p => p.order).HasForeignKey(p => p.orderId).HasConstraintName("FK_OrderDetails_Orders");
-         
+            builder.HasMany(p => p.Payments).WithOne(p => p.Order).HasForeignKey(p => p.PaymentID).HasConstraintName("FK_Payment_Orders");
+            builder.HasMany(p => p.OrderDetails).WithOne(p => p.Order).HasForeignKey(p => p.OrderId).HasConstraintName("FK_OrderDetails_Orders");
             builder.HasOne(p => p.Customer).WithMany(p => p.Orders).HasForeignKey(p => p.CustomerId).HasConstraintName("FK_Customer_Orders").OnDelete(DeleteBehavior.Cascade);
-
         }
     }
 }

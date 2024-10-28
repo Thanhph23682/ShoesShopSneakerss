@@ -9,13 +9,13 @@ using APPDATA.Models;
 
 namespace APPDATA.Configurations
 {
-    public class SizeConfigurations : IEntityTypeConfiguration<size>
+    public class SizeConfigurations : IEntityTypeConfiguration<Size>
     {
-        public void Configure(EntityTypeBuilder<size> builder)
+        public void Configure(EntityTypeBuilder<Size> builder)
         {
             builder.ToTable("Size");
-            builder.HasKey(p => p.sizeID);
-            builder.HasMany(p => p.ProductVariants).WithOne(p => p.size).HasForeignKey(p => p.sizeID).HasConstraintName("FK_productVariant_Size");
+            builder.HasKey(p => p.SizeID);
+            builder.HasMany(p => p.ProductVariants).WithOne(p => p.Size).HasForeignKey(p => p.SizeID).HasConstraintName("FK_productVariant_Size");
         }
     }
 }

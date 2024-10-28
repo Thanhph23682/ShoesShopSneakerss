@@ -12,21 +12,21 @@ namespace APPDATA.Models
     {
         [Key]
 
-        public int? Id { get; set; } = null;
-        public int? UserId { get; set; } = null;
-        public int? CustomerId { get; set; } = null;
-        public int? payment_Status { get; set; } = null;
-        public int? order_Status { get; set; } = null;
-        public DateTime? order_Date { get; set; } = null;
-        public DateTime? update_Date { get; set; } = null;
-        public decimal? total_Amount { get; set; } = null;
-        public string? order_Desc { get; set; } = null;
-        public string? order_Phone { get; set; } = null;
-        public string? order_Name { get; set; } = null;
-        public string? order_Address { get; set; } = null;
+        public int Id { get; set; }
+        public int UserId { get; set; } 
+        public int CustomerId { get; set; } 
+        public int Payment_Status { get; set; }
+        public int? Order_Status { get; set; } = null;
+        public DateTime? Order_Date { get; set; } = null;
+        public DateTime? Update_Date { get; set; } = null;
+        public decimal? Total_Amount { get; set; } = null;
+        public string? Order_Desc { get; set; } = null;
+        public string? Order_Phone { get; set; } = null;
+        public string? Order_Name { get; set; } = null;
+        public string? Order_Address { get; set; } = null;
         public ICollection<OrderDetail>? OrderDetails { get; set; }
-        public ICollection<Payment>? payments { get; set; }
-        public virtual User? user { get; set; }
+        public ICollection<Payment>? Payments { get; set; }
+        public virtual User? User { get; set; }
         public virtual Customer? Customer { get; set; }
 
     }
