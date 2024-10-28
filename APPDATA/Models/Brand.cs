@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Models
 {
-    public  class Brand
+    public class Brand
     {
         [Key]
-        public int brandID { get; set; }
-        public string name { get; set; }
+        public int BrandId { get; set; }
+        public string? Name { get; set; }
+        public ICollection<Products>? Products { get; set; }
+
     }
 }

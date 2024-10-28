@@ -14,8 +14,14 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<Order> builder)
         {
             builder.HasKey(c => c.Id);
-            //builder.HasOne(c => c.User).WithMany(c => c.Order).HasForeignKey(c => c.Userid);
-            //builder.HasOne(c => c.Customer).WithMany(c => c.Order).HasForeignKey(c => c.CustomerId);
+            builder.ToTable("Order");
+
+            builder.HasMany(p => p.payments).WithOne(p => p.order).HasForeignKey(p => p.PaymentID).HasConstraintName("FK_Payment_Orders");
+
+            builder.HasMany(p => p.OrderDetails).WithOne(p => p.order).HasForeignKey(p => p.orderId).HasConstraintName("FK_OrderDetails_Orders");
+         
+            builder.HasOne(p => p.Customer).WithMany(p => p.Orders).HasForeignKey(p => p.CustomerId).HasConstraintName("FK_Customer_Orders").OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }

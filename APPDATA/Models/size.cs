@@ -12,5 +12,7 @@ namespace APPDATA.Models
         [Key]
         public int sizeID { get; set; }
         public int nameSize { get; set; }
+        public ICollection<ProductVariant>? ProductVariants { get; set; }
+
     }
 }

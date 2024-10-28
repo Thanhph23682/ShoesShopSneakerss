@@ -16,6 +16,12 @@ namespace APPDATA.Models
         public int sizeID { get; set; }
         public int Quantity { get; set; }
         public DateTime update_date { get; set; }
-        public string update_User { get; set; }
+        public string? update_User { get; set; }
+        public virtual Color? color { get; set; }
+        public virtual size? size { get; set; }
+        public virtual OrderDetail? OrderDetail { get; set; }
+        public virtual Products? Products { get; set; }
+
+
     }
 }

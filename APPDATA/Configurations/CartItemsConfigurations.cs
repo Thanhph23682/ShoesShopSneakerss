@@ -9,19 +9,12 @@ using System.Threading.Tasks;
 
 namespace APPDATA.Configurations
 {
-    public class CarrtItemsConfigurations : IEntityTypeConfiguration<CartItems>
+    public class CartItemsConfigurations : IEntityTypeConfiguration<CartItems>
     {
         public void Configure(EntityTypeBuilder<CartItems> builder)
         {
             builder.ToTable("CartItems"); 
             builder.HasKey(p => p.Id); 
-
-            // Mối quan hệ với Cart
-            builder.HasOne(p => p.Cart) 
-                   .WithMany(p => p.CartItems) 
-                   .HasForeignKey(p => p.CartId) 
-                   
-                   .HasConstraintName("FK_CartItems_Cart");
         }
     }
 }

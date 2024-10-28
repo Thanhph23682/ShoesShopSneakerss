@@ -11,8 +11,10 @@ namespace APPDATA.Models
     {
         [Key]
         public int PaymentID { get; set; }
-        public string PaymentMethod { get; set; }
-        public string PaymentDescription { get; set; }
+        public string? PaymentMethod { get; set; }
+        public string? PaymentDescription { get; set; }
         public int PaymentImage { get; set; }
+        public virtual Order? order { get; set; }
+
     }
 }

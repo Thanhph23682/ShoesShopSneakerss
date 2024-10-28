@@ -16,7 +16,14 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<OrderDetail> builder)
         {
             builder.HasKey(c => c.Id);
-            builder.HasOne(c=>c.Order).WithMany(c =>c.OrderDetails).HasForeignKey(c => c.orderId);
+            builder.ToTable("OrderDetails");
+
+            builder.HasOne(p => p.order).WithMany(p => p.OrderDetails).HasForeignKey(p => p.orderId).HasConstraintName("FK_OrderDetail_Order");
+           
+
+
+
+
         }
     }
 }

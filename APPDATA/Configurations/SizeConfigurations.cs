@@ -14,8 +14,8 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<size> builder)
         {
             builder.ToTable("Size");
-            builder.HasKey(p => p.sizeID);  
-
+            builder.HasKey(p => p.sizeID);
+            builder.HasMany(p => p.ProductVariants).WithOne(p => p.size).HasForeignKey(p => p.sizeID).HasConstraintName("FK_productVariant_Size");
         }
     }
 }

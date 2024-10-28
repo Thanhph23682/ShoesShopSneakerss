@@ -11,8 +11,8 @@ namespace APPDATA.Models
     {
         [Key]
         public int ContactID { get; set; }
-        public string ContactName { get; set; }
-        public string ContactDescription { get; set; }
-        public string ContactImageURL { get; set; }
+        public string? ContactName { get; set; }
+        public string? ContactDescription { get; set; }
+        public string? ContactImageURL { get; set; }
     }
 }

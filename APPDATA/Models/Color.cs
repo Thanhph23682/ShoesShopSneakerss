@@ -11,7 +11,9 @@ namespace APPDATA.Models
     {
         [Key]
         public int colorID { get; set; }
-        public string colorName { get; set; }
-        public string colorValue { get; set; }
+        public string? colorName { get; set; }
+        public string? colorValue { get; set; }
+        public ICollection<ProductVariant>? ProductVariants { get; set; }
+
     }
 }

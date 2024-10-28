@@ -14,9 +14,13 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<Brand> builder)
         {
             builder.ToTable("Brand");
-            builder.HasKey(p => p.brandID);  // Thiết lập pk
-       
+            builder.HasKey(p => p.BrandId);
+ 
+   builder.HasMany(p => p.Products).WithOne(p => p.Brand).HasForeignKey(p => p.brandID).HasConstraintName("FK_ThuongHieu_SanPham");
 
-        }
-    }
+
+
+
+  }
+ }
 }

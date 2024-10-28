@@ -16,12 +16,12 @@ namespace APPDATA.Configurations
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.ToTable("Customer");
-            // Mối quan hệ với Role
             builder.HasKey(p => p.Id);
-            //builder.HasOne(p => p.Role) 
-            //      .WithOne() 
-            //      .HasForeignKey<Customer>(p => p.RoleId)
-            //      .HasConstraintName("FK_Customer_Role");
+           
+            builder.HasMany(p => p.Vouchers).WithOne(p => p.Customer).HasForeignKey(p => p.idCustomer).HasConstraintName("FK_Voucher_Customers");
+            builder.HasMany(p => p.Orders).WithOne(p => p.Customer).HasForeignKey(p => p.CustomerId).HasConstraintName("FK_Orders_Customers");
+ builder.HasMany(p => p.Carts).WithOne(p => p.Customers).HasForeignKey(p => p.CustomerId).HasConstraintName("Cart_Customers");
+
         }
     }
 }

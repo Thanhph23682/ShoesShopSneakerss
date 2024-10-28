@@ -18,7 +18,7 @@ namespace APPDATA.Configurations
             // Mối quan hệ với Users
             builder.HasMany(p => p.Users).WithOne(p => p.Role).HasForeignKey(p => p.RoleId).HasConstraintName("FK_User_Role");
             // Mối quan hệ với Customers
-            //builder.HasMany(p => p.Customers).WithOne(p => p.Role).HasForeignKey(p => p.RoleId).HasConstraintName("FK_Customer_Role");
+         builder.HasMany(p => p.Customers).WithOne(p => p.Role).HasForeignKey(p => p.RoleId).HasConstraintName("FK_Customer_Role");
         }
     }
 }
