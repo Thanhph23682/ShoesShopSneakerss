@@ -17,6 +17,17 @@ namespace APPAPI.Controllers
   {
    _crud = new CRUDapi<Slider>(_context, _context.Sliders);
   }
+  [Route("GetById")]
+  [HttpGet]
+  public ActionResult<Slider> GetById(int id)
+  {
+   var slider = _crud.GetAllItems().FirstOrDefault(p => p.SliderID == id);
+   if (slider == null)
+   {
+    return NotFound();
+   }
+   return Ok(slider);
+  }
   [HttpGet]
   public IEnumerable<Slider> GetAll()
   {

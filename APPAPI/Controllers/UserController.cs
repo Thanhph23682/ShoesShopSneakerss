@@ -28,7 +28,17 @@ namespace APPAPI.Controllers
   {
    _crud = new CRUDapi<User>(_context, _context.Users);
   }
-
+  [Route("GetById")]
+  [HttpGet]
+  public ActionResult<User> GetById(int id)
+  {
+   var user = _crud.GetAllItems().FirstOrDefault(p => p.ID == id);
+   if (user == null)
+   {
+    return NotFound();
+   }
+   return Ok(user);
+  }
   [HttpGet]
   public IEnumerable<User> GetAll()
   {

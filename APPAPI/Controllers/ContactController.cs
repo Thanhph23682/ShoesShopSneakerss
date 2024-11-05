@@ -3,6 +3,7 @@ using APPDATA.DB;
 using APPDATA.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.WebSockets;
 
 namespace APPAPI.Controllers
 {
@@ -13,12 +14,25 @@ namespace APPAPI.Controllers
   ShopDbContext _context = new ShopDbContext();
   private readonly CRUDapi<Contact> _crud;
 
-
-
   public ContactController()
   {
+   
    _crud = new CRUDapi<Contact>(_context, _context.Contacts);
   }
+  [Route("GetById")]
+  [HttpGet]
+  public ActionResult<Contact> GetById(int id)
+  {
+   var contact = _crud.GetAllItems().FirstOrDefault(p => p.ContactID == id);
+   if (contact == null)
+   {
+    return NotFound();
+   }
+   return Ok(contact);
+  }
+
+  
+
   [HttpGet]
   public IEnumerable<Contact> GetAll()
   {
@@ -28,6 +42,7 @@ namespace APPAPI.Controllers
   [HttpPost]
   public bool Create(Contact obj)
   {
+
    return _crud.CreateItem(obj);
   }
   [Route("Update")]
@@ -36,6 +51,9 @@ namespace APPAPI.Controllers
   {
 
    Contact item = _crud.GetAllItems().FirstOrDefault(p => p.ContactID == obj.ContactID);
+
+
+
    if (item != null)
    {
     item.ContactName = obj.ContactName;

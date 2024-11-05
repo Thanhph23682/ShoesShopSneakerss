@@ -22,7 +22,17 @@ namespace APPAPI.Controllers
    _crud = new CRUDapi<Role>(_context, _context.Roles);
   }
 
-
+  [Route("GetById")]
+  [HttpGet]
+  public ActionResult<Role> GetById(int id)
+  {
+   var role = _crud.GetAllItems().FirstOrDefault(p => p.ID == id);
+   if (role == null)
+   {
+    return NotFound();
+   }
+   return Ok(role);
+  }
   [HttpGet]
   public IEnumerable<Role> GetAll() 
   {
