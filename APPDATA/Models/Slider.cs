@@ -12,6 +12,6 @@ namespace APPDATA.Models
         [Key]
         public int SliderID { get; set; }
         public string? SliderImage { get; set; }
-        public bool SliderStatus { get; set; }
+        public int SliderStatus { get; set; }
     }
 }

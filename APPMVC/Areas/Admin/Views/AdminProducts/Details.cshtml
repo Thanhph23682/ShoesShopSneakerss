@@ -30,7 +30,7 @@
             <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Basic Info</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#product-edit-option">Images products</a>
+            <a class="nav-link" data-toggle="tab" href="#product-images">Images products</a>
         </li>
 
     </ul>
@@ -79,6 +79,12 @@
                                     <td>@Model.Thumbnail</td>
                                 </tr>
                                 <tr>
+                                    <td>Ảnh:</td>
+                                    <td>
+                                        <img src="~/images/products/@Model.ImagePath" width="200" height="200" alt="Product Image">
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>Alias:</td>
                                     <td>@Model.Alias</td>
                                 </tr>
@@ -114,6 +120,7 @@
             </div>
         </div>
     </div>
+   
 </div>
 <div>
     <a asp-action="Index">Back to List</a>

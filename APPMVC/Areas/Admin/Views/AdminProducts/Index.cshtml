@@ -1,12 +1,36 @@
-﻿@model IEnumerable<APPDATA.Models.Products>
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<APPDATA.Models.Products>
 
 @{
-    ViewData["Title"] = "Index";
+    int CurrentPage = ViewBag.CurrentPage;
+
+    ViewData["Title"] = "Danh sách sản phẩm" + CurrentPage;
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a class="breadcrumb-item" asp-asp-area="Admin" asp-asp-controller="AdminCustomers" asp-action="Index">Quản lý sản phẩm</a>
+            <span class="breadcrumb-item active">Danh sách sản phẩm: page @CurrentPage</span>
+        </nav>
+    </div>
+</div>
 
 <div class="card">
     <div class="card-body">
+        <form asp-action="Index" method="get" class="form-inline">
+
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input name="name" style="border: 1px solid #00C9A9; " class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">&ensp;
+
+                    <button style="border: 1px solid #00C9A9" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+
+        </form>
+
         <a class="btn btn-secondary m-r-5" asp-area="Admin" asp-controller="AdminProducts" asp-action="Create">Create</a>
 
         <div class="table-responsive">
@@ -14,6 +38,8 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
+                        <th scope="col">Ảnh</th>
+
                         <th scope="col">Tên sản phẩm</th>
                         <th scope="col">Danh mục</th>
                         <th scope="col">Thương hiệu</th>
@@ -21,7 +47,6 @@
                         <th scope="col">Mô tả</th>
                         <th scope="col">Ngày tạo</th>
                         <th scope="col">Thumbnail</th>
-                        <th scope="col">Ảnh</th>
                         <th scope="col">Hành động</th>
                     </tr>
 
@@ -33,6 +58,9 @@
                         {
                             <tr>
                                 <td scope="row">@item.ProductID</td>
+                                <td>
+                                    <img src="~/images/products/@item.ImagePath" width="200" height="200" alt="Product Image">
+                                </td>
                                 <td scope="row">@item.NameProduct</td>
                                 <td scope="row">@item.Category.Name</td>
                                 <td scope="row">@item.Brand.Name</td>
@@ -45,7 +73,7 @@
 
                                 <td scope="row">@item.Thumbnail</td>
 
-                                <td scope="row">@item.ImagePath</td>
+                              
 
                                 <td>
 
@@ -61,6 +89,11 @@
                     }
                 </tbody>
             </table>
+            <div aria-label="Page navigation example">
+                <ul class="pagination">
+                    <pager class="pager-container" list="@Model" asp-area="Admin" asp-controller="AdminProducts" asp-action="Index" />
+                </ul>
+            </div>
 
         </div>
     </div>

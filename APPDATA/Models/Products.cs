@@ -21,6 +21,7 @@ namespace APPDATA.Models
         public string? Thumbnail { get; set; }
         public string? ImagePath { get; set; }
         public string? Alias { get; set; }
+        public int status { get; set; }
         public virtual Category? Category { get; set; }
         public virtual Brand? Brand { get; set; }
         public ICollection<ProductVariant>? ProductVariants { get; set; }

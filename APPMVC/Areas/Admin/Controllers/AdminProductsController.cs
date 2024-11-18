@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using APPDATA.DB;
 using APPDATA.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using PagedList.Core;
+using FPolyShopSneakers.Helpper;
 
 namespace APPMVC.Areas.Admin.Controllers
 {
@@ -25,12 +27,27 @@ namespace APPMVC.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminProducts
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page, string name)
         {
             var shopDbContext = _context.Products.Include(p => p.Brand).Include(p => p.Category);
             ViewData["DanhMuc"] = new SelectList(_context.Categories, "CategoryID", "Name");//viewbag
             ViewData["Brands"] = new SelectList(_context.Brands, "BrandId", "Name");//viewbag 
-            return View(await shopDbContext.ToListAsync());
+
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pageSize = 10;
+            var listProducts = _context.Products.AsNoTracking()
+                .Include(p => p.Category )
+                .Include(p => p.Brand )
+                .OrderByDescending(p => p.ProductID).AsQueryable();
+            if (!string.IsNullOrEmpty(name))
+            {
+                listProducts = listProducts.Where(p => p.NameProduct.ToLower().Contains(name));
+            }
+
+            PagedList<Products> models = new PagedList<Products>(listProducts, pageNumber, pageSize);
+            ViewBag.CurrentPage = pageNumber;
+
+            return View(models);
         }
 
         // GET: Admin/AdminProducts/Details/5
@@ -66,11 +83,27 @@ namespace APPMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductID,CategoryID,BrandID,NameProduct,Price,Desciption,CreateDate,Thumbnail,ImagePath,Alias")] Products products)
+        public async Task<IActionResult> Create([Bind("ProductID,CategoryID,BrandID,NameProduct,Price,Desciption,CreateDate,Thumbnail,ImagePath,Alias")] Products products, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
+                products.NameProduct = Utilities.ToTitleCase(products.NameProduct);
+                if (ImageFile != null)
+                {
+                    string extension = Path.GetExtension(ImageFile.FileName);
+                    string images = Utilities.SEOUrl(products.NameProduct) + extension;
+                    products.ImagePath = await Utilities.UploadFile(ImageFile, @"Products", images.ToLower());
+                }
+                if (string.IsNullOrEmpty(products.ImagePath)) products.ImagePath = "default.jpg";
+                products.Alias = Utilities.SEOUrl(products.NameProduct);
                 products.CreateDate = DateTime.Now;
+
+
+
+
+
+
+                // Thêm sản phẩm vào context và lưu vào cơ sở dữ liệu
 
                 _context.Add(products);
 
@@ -107,7 +140,7 @@ namespace APPMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductID,CategoryID,BrandID,NameProduct,Price,Desciption,CreateDate,Thumbnail,ImagePath,Alias")] Products products)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductID,CategoryID,BrandID,NameProduct,Price,Desciption,CreateDate,Thumbnail,ImagePath,Alias")] Products products, IFormFile? ImageFile)
         {
             if (id != products.ProductID)
             {
@@ -118,6 +151,15 @@ namespace APPMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    products.NameProduct = Utilities.ToTitleCase(products.NameProduct);
+                    if (ImageFile != null)
+                    {
+                        string extension = Path.GetExtension(ImageFile.FileName);
+                        string images = Utilities.SEOUrl(products.NameProduct) + extension;
+                        products.ImagePath = await Utilities.UploadFile(ImageFile, @"Products", images.ToLower());
+                    }
+                    if (string.IsNullOrEmpty(products.ImagePath)) products.ImagePath = "default.jpg";
+
                     _context.Update(products);
                     await _context.SaveChangesAsync();
                     _NotyfService.Success("Cập nhật thành công");

@@ -21,7 +21,7 @@ namespace APPDATA.DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-VANLOI\\SQLEXPRESS;Initial Catalog = ShoeShopSneaker;Integrated Security=True;Trust Server Certificate=True");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-VANLOI\\SQLEXPRESS;Initial Catalog = ShoeShopSneakers;Integrated Security=True;Trust Server Certificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
