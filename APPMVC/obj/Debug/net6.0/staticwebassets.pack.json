@@ -1,1763 +1,1767 @@
 {
   "Files": [
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\APPMVC.bundle.scp.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\APPMVC.bundle.scp.css",
       "PackagePath": "staticwebassets\\APPMVC.bundle.scp.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\css\\icons.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\css\\icons.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\css\\icons.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\css\\style.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\css\\style.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\css\\style.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.woff",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxiconsd41d.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\boxiconsd41d.svg",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\boxiconsd41d.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-brands-400.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-brands-400.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-regular-400.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-regular-400.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-solid-900.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-solid-900.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-v4compatibility.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-v4compatibility.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-v4compatibility.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-v4compatibility.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\fa-v4compatibility.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.eot",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.ttf",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff2",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\materialdesignicons-webfont3e71.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfontd41d.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\fonts\\materialdesignicons-webfontd41d.eot",
       "PackagePath": "staticwebassets\\AdminAssets\\fonts\\materialdesignicons-webfontd41d.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\404-error.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\404-error.svg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\404-error.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\500-error.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\500-error.svg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\500-error.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\favicon.ico",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\favicon.ico"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\germany.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\germany.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\flags\\germany.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\italy.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\italy.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\flags\\italy.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\russia.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\russia.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\flags\\russia.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\spain.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\spain.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\flags\\spain.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\us.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\flags\\us.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\flags\\us.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-dark.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-dark.png",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\logo-dark.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-light.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-light.png",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\logo-light.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-sm.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\logo-sm.png",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\logo-sm.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-1.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-2.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-3.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-4.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-5.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-6.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\media\\img-7.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\media\\img-7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\megamenu-bg.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\megamenu-bg.html",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\megamenu-bg.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\multiple-arrow.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\multiple-arrow.html",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\multiple-arrow.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-1.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-2.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-3.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-4.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-5.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-6.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\images\\users\\avatar-8.jpg",
       "PackagePath": "staticwebassets\\AdminAssets\\images\\users\\avatar-8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\app.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\app.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\app.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\config.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\config.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\config.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\apexcharts.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\apexcharts.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\apexcharts.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\calendar.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\calendar.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\calendar.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\chartjs.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\chartjs.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\chartjs.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\dashboard.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\dashboard.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\dashboard.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\datatables.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\datatables.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\datatables.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-advanced.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-advanced.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\form-advanced.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-fileuploads.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-fileuploads.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\form-fileuploads.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-quilljs.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-quilljs.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\form-quilljs.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-validation.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\form-validation.html",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\form-validation.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\google-maps.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\google-maps.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\google-maps.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\loading-btn.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\loading-btn.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\loading-btn.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\materialdesign.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\materialdesign.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\materialdesign.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\morris.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\morris.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\morris.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\range-sliders.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\range-sliders.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\range-sliders.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\sweet-alerts.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\sweet-alerts.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\sweet-alerts.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\vector-maps.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\pages\\vector-maps.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\pages\\vector-maps.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\vendor.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\js\\vendor.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\js\\vendor.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.min.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.min.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\jquery-jvectormap-1.2.2.min.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-au-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-au-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-au-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-ca-lcc-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-ca-lcc-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-ca-lcc-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-merc.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-merc.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-merc.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-mill.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-mill.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-es-mill.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-europe-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-europe-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-europe-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-fr-merc-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-fr-merc-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-fr-merc-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-in-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-in-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-in-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-uk-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-uk-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-uk-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-il-chicago-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-il-chicago-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-il-chicago-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-merc-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-merc-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-us-merc-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-world-mill-en.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-world-mill-en.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\admin-resources\\jquery.vectormap\\maps\\jquery-jvectormap-world-mill-en.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\apexcharts\\apexcharts.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\apexcharts\\apexcharts.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\apexcharts\\apexcharts.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-maxlength\\bootstrap-maxlength.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-maxlength\\bootstrap-maxlength.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\bootstrap-maxlength\\bootstrap-maxlength.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\bootstrap-touchspin\\jquery.bootstrap-touchspin.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\chart.js\\Chart.bundle.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\chart.js\\Chart.bundle.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\chart.js\\Chart.bundle.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-bs5\\css\\dataTables.bootstrap5.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-bs5\\css\\dataTables.bootstrap5.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-bs5\\css\\dataTables.bootstrap5.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-bs5\\js\\dataTables.bootstrap5.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-bs5\\js\\dataTables.bootstrap5.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-bs5\\js\\dataTables.bootstrap5.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons-bs5\\css\\buttons.bootstrap5.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons-bs5\\css\\buttons.bootstrap5.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons-bs5\\css\\buttons.bootstrap5.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons-bs5\\js\\buttons.bootstrap5.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons-bs5\\js\\buttons.bootstrap5.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons-bs5\\js\\buttons.bootstrap5.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.flash.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.flash.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.flash.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.html5.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.html5.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.html5.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.print.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.print.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons\\js\\buttons.print.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\dataTables.buttons.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-buttons\\js\\dataTables.buttons.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-buttons\\js\\dataTables.buttons.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-keytable\\js\\dataTables.keyTable.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-keytable\\js\\dataTables.keyTable.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-keytable\\js\\dataTables.keyTable.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive-bs5\\css\\responsive.bootstrap5.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive-bs5\\css\\responsive.bootstrap5.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-responsive-bs5\\css\\responsive.bootstrap5.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive-bs5\\js\\responsive.bootstrap5.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive-bs5\\js\\responsive.bootstrap5.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-responsive-bs5\\js\\responsive.bootstrap5.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive\\js\\dataTables.responsive.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-responsive\\js\\dataTables.responsive.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-responsive\\js\\dataTables.responsive.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-select-bs5\\css\\select.bootstrap5.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-select-bs5\\css\\select.bootstrap5.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-select-bs5\\css\\select.bootstrap5.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-select\\js\\dataTables.select.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net-select\\js\\dataTables.select.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net-select\\js\\dataTables.select.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net\\js\\jquery.dataTables.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\datatables.net\\js\\jquery.dataTables.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\datatables.net\\js\\jquery.dataTables.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\dropzone\\min\\dropzone.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\fullcalendar\\main.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\fullcalendar\\main.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\fullcalendar\\main.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\fullcalendar\\main.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\fullcalendar\\main.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\fullcalendar\\main.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\gmaps\\gmaps.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\gmaps\\gmaps.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\gmaps\\gmaps.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ion-rangeslider\\css\\ion.rangeSlider.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ion-rangeslider\\css\\ion.rangeSlider.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ion-rangeslider\\css\\ion.rangeSlider.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ion-rangeslider\\js\\ion.rangeSlider.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ion-rangeslider\\js\\ion.rangeSlider.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ion-rangeslider\\js\\ion.rangeSlider.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery-knob\\jquery.knob.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery-knob\\jquery.knob.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\jquery-knob\\jquery.knob.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery-sparkline\\jquery.sparkline.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery-sparkline\\jquery.sparkline.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\jquery-sparkline\\jquery.sparkline.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery.quicksearch\\jquery.quicksearch.min.html",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\jquery.quicksearch\\jquery.quicksearch.min.html",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\jquery.quicksearch\\jquery.quicksearch.min.html"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda-themeless.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda-themeless.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ladda\\ladda-themeless.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ladda\\ladda.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\ladda.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ladda\\ladda.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\spin.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\ladda\\spin.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\ladda\\spin.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\mohithg-switchery\\switchery.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\moment\\min\\moment.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\moment\\min\\moment.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\moment\\min\\moment.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js06\\morris.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js06\\morris.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\morris.js06\\morris.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js\\morris.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js\\morris.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\morris.js\\morris.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js\\morris.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\morris.js\\morris.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\morris.js\\morris.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\css\\multi-select.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\css\\multi-select.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\multiselect\\css\\multi-select.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\img\\switch.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\img\\switch.png",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\multiselect\\img\\switch.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\js\\jquery.multi-select.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\multiselect\\js\\jquery.multi-select.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\multiselect\\js\\jquery.multi-select.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\pdfmake\\build\\pdfmake.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\pdfmake\\build\\pdfmake.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\pdfmake\\build\\pdfmake.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\pdfmake\\build\\vfs_fonts.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\pdfmake\\build\\vfs_fonts.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\pdfmake\\build\\vfs_fonts.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.bubble.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.bubble.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\quill\\quill.bubble.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.core.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.core.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\quill\\quill.core.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\quill\\quill.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.snow.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\quill\\quill.snow.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\quill\\quill.snow.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\raphael\\raphael.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\raphael\\raphael.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\raphael\\raphael.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\select2\\css\\select2.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\select2\\css\\select2.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\select2\\css\\select2.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\select2\\js\\select2.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\select2\\js\\select2.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\select2\\js\\select2.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\selectize\\css\\selectize.bootstrap3.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\selectize\\css\\selectize.bootstrap3.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\selectize\\css\\selectize.bootstrap3.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\selectize\\js\\standalone\\selectize.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\selectize\\js\\standalone\\selectize.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\selectize\\js\\standalone\\selectize.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\sweetalert2\\sweetalert2.all.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\sweetalert2\\sweetalert2.all.min.js",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\sweetalert2\\sweetalert2.all.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\sweetalert2\\sweetalert2.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\AdminAssets\\libs\\sweetalert2\\sweetalert2.min.css",
       "PackagePath": "staticwebassets\\AdminAssets\\libs\\sweetalert2\\sweetalert2.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\css\\style.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\css\\vendor.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\css\\vendor.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.woff",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400.woff"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400d41d.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-brands-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-brands-400d41d.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.woff",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400.woff"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400d41d.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-regular-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-regular-400d41d.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.ttf",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900.ttf"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.woff",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900.woff"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.woff2",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900.woff2"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900d41d.eot",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\fonts\\la-solid-900d41d.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\la-solid-900d41d.eot"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\about-hero.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\about-hero.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about\\about-hero.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\banner.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\banner.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about\\banner.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\count-bg.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\count-bg.png",
       "PackagePath": "staticwebassets\\assets\\img\\about\\count-bg.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about\\p1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about\\p2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\about\\p3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about\\p3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\bag-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\bag-7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\collection.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\collection.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\collection.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\f6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\f6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\shoe-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\shoe-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\shoe-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\shoe-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\shoe-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\shoe-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\single-banner-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\single-banner-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\single-banner-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\single-banner.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\single-banner.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\single-banner.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\tools-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\tools-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-bg.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\banner\\tools-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\tools-bg.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\bag-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\bag-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\bag-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\bag-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-9.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\furniture-9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\furniture-9.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\tools-1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\tools-2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\blog\\tools-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\tools-3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\1.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\1.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\1.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\2.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\2.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\2.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\3.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\3.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\3.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\4.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\4.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\4.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\5.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\5.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\5.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\6.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\brand\\6.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand\\6.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\checkout\\user.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\checkout\\user.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\checkout\\user.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\error\\error.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\error\\error.png",
       "PackagePath": "staticwebassets\\assets\\img\\error\\error.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\favicon.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\cad.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\favicon_shoesShop.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon_shoesShop.png"
+    },
+    {
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\cad.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\flag\\cad.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\eur.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\eur.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\flag\\eur.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\gbp.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\gbp.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\flag\\gbp.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\jpy.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\jpy.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\flag\\jpy.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\usd.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\flag\\usd.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\flag\\usd.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\1.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\1.png",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\core-features\\1.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\2.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\2.png",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\core-features\\2.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\3.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\3.png",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\core-features\\3.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\4.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\core-features\\4.png",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\core-features\\4.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\minus.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\minus.svg",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\minus.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\plus.svg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\plus.svg",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\plus.svg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\star.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\icon\\star.png",
       "PackagePath": "staticwebassets\\assets\\img\\icon\\star.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\bag1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\bag2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\bag3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\bag4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\bag4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\s1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\s2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\s3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\instagram\\s4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\instagram\\s4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo-accent.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo-accent.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo-accent.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo-white.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo-white.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo-white.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\menu\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\menu\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\menu\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\newsletter\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\newsletter\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\newsletter\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\newsletter\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\newsletter\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\newsletter\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\people\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\people\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\people\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\blogger.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\people\\blogger.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\people\\blogger.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\product.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\product.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\11.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\11.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\17.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\17.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\17.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\18.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\18.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\18.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\22.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\22.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\22.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\23.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\23.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\23.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\26.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\26.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\26.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\27.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\27.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\27.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\29.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\29.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\29.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\30.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\30.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\30.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\32.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\32.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\32.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\34.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\34.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\34.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\36.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\36.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\36.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\37.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\37.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\37.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\38.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\38.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\38.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\39.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\39.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\39.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\bags\\8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\bags\\8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\10.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\10.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\10.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\11.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\11.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\14.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\14.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\14.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\15.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\15.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\15.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\16.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\16.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\16.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\17.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\17.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\17.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\19.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\19.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\19.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\21.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\21.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\21.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\22.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\22.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\22.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\23.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\23.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\23.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\27.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\27.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\27.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\28.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\28.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\28.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\29.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\29.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\29.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\9.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\furniture\\9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\furniture\\9.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\10.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\10.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\10.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\11.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\11.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\14.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\14.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\14.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\15.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\15.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\15.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\16.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\16.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\16.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\17.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\17.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\17.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\19.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\19.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\19.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\20.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\20.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\20.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\21.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\21.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\21.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\22.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\22.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\22.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\23.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\23.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\23.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\24.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\24.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\24.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\25.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\25.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\25.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\9.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\shoe\\9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\shoe\\9.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\10.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\10.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\10.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\11.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\11.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\12.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\12.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\12.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\13.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\13.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\13.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\14.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\14.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\14.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\15.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\15.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\15.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\16.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\16.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\16.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\17.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\17.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\17.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\18.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\18.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\18.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\19.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\19.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\19.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\20.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\20.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\20.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\21.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\21.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\21.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\22.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\22.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\22.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\23.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\23.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\23.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\24.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\24.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\24.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\25.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\25.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\25.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\26.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\26.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\26.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\27.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\27.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\27.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\28.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\28.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\28.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\29.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\29.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\29.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\30.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\30.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\30.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\31.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\31.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\31.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\32.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\32.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\32.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\34.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\34.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\34.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\36.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\36.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\36.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\38.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\38.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\38.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\39.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\39.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\39.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\40.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\40.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\40.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\7.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\7.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\8.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\8.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\9.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\products\\tools\\9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\tools\\9.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b1-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b1-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b1-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b2-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b2-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b2-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b3-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b3-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b3-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\b3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\b3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f1-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f1-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f1-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f2-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f2-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f2-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f3-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f3-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f3-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\f3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\f3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s1-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s1-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s1-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s2-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s2-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s2-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s3-m.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s3-m.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s3-m.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\s3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\s3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\t1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\t2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\slideshow\\t3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\slideshow\\t3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\1.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\1.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\2.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\2.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\3.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\3.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\4.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\4.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\5.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\5.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\6.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\team\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\6.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\testimonial\\john.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\testimonial\\john.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\testimonial\\john.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\1.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\1.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\1.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\2.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\2.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\2.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\3.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\3.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\3.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\4.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\4.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\4.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\5.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\5.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\5.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\6.png",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\trusted\\6.png",
       "PackagePath": "staticwebassets\\assets\\img\\trusted\\6.png"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\video\\video-furniture.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\video\\video-furniture.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\video\\video-furniture.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\video\\video-tools.jpg",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\img\\video\\video-tools.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\video\\video-tools.jpg"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\js\\main.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\js\\vendor.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\assets\\js\\vendor.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\css\\site.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\favicon.ico",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\js\\site.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Máy tính\\DATN\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

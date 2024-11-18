@@ -1,0 +1,85 @@
+﻿@model APPDATA.Models.Category
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header no-gutters has-tab">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Tổng quan</a>
+        </li>
+
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin danh mục: @Model.Name</h4>
+                    <div class="table-responsive">
+                        <form asp-action="Delete" asp-route-id="@Model.CategoryID">
+                            <input type="hidden" asp-for="CategoryID" />
+                            <table class="product-info-table m-t-20">
+                                <tbody>
+                                    <tr>
+                                        <td>Tên danh mục:</td>
+                                        <td class="text-dark font-weight-semibold">@Model.Name</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mô tả:</td>
+                                        <td>@Model.Description</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Ảnh:</td>
+                                        <td>@Model.Images</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trạng thái:</td>
+                                        <td>
+
+                                            @if (Model.Status == 1)
+                                            {
+                                                <div class="d-flex align-items-center">
+                                                    <div class="badge badge-success badge-dot m-r-10"></div>
+                                                    <div>Hoạt động</div>
+                                                </div>
+                                            }
+                                            else if (Model.Status == 0)
+                                            {
+                                                <div class="d-flex align-items-center">
+                                                    <div class="badge badge-warning badge-dot m-r-10"></div>
+                                                    <div>Khóa</div>
+                                                </div>
+                                            }
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Xác nhận xóa danh mục</td>
+                                        <td>
+                                            <input type="submit" value="Xác nhận xóa" class="btn btn-danger" />
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

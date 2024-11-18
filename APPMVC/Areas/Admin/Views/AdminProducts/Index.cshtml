@@ -1,0 +1,68 @@
+﻿@model IEnumerable<APPDATA.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <a class="btn btn-secondary m-r-5" asp-area="Admin" asp-controller="AdminProducts" asp-action="Create">Create</a>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Danh mục</th>
+                        <th scope="col">Thương hiệu</th>
+                        <th scope="col">Giá tiền</th>
+                        <th scope="col">Mô tả</th>
+                        <th scope="col">Ngày tạo</th>
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Ảnh</th>
+                        <th scope="col">Hành động</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td scope="row">@item.ProductID</td>
+                                <td scope="row">@item.NameProduct</td>
+                                <td scope="row">@item.Category.Name</td>
+                                <td scope="row">@item.Brand.Name</td>
+                                <td>@item.Price.ToString("#, ##0") VND</td>
+
+
+                                <td scope="row">@item.Desciption</td>
+
+                                <td scope="row">@item.CreateDate</td>
+
+                                <td scope="row">@item.Thumbnail</td>
+
+                                <td scope="row">@item.ImagePath</td>
+
+                                <td>
+
+
+                                    <a asp-area="Admin" asp-controller="AdminProducts" asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-success m-r-5">Edit</a>
+                                    <a asp-area="Admin" asp-controller="AdminProducts" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-info m-r-5">Details</a>
+                                    <a asp-area="Admin" asp-controller="AdminProducts" asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-warning m-r-5">Delete</a>
+
+                                </td>
+                            </tr>
+
+                        }
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+

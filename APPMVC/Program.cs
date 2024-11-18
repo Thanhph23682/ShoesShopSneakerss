@@ -1,4 +1,5 @@
-using APPDATA.DB;
+﻿using APPDATA.DB;
+using AspNetCoreHero.ToastNotification;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +8,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ShopDbContext>();
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-
+builder.Services.AddNotyf(config =>
+{
+    config.DurationInSeconds = 3;
+    config.IsDismissable = true;
+    config.Position = NotyfPosition.BottomRight; //thông số cài tùy ý
+});
 
 var app = builder.Build();
 

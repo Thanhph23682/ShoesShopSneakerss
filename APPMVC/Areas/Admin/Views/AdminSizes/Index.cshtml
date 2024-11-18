@@ -1,0 +1,47 @@
+﻿@model IEnumerable<APPDATA.Models.Size>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="card">
+    <div class="card-body">
+        <a class="btn btn-secondary m-r-5" asp-area="Admin" asp-controller="AdminSizes" asp-action="Create">Create</a>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Size</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td scope="row">@item.SizeID</td>
+                                <td scope="row">@item.NameSize</td>
+
+                                <td>
+
+                                    <a asp-area="Admin" asp-controller="AdminSizes" asp-action="Edit" asp-route-id="@item.SizeID" class="btn btn-success m-r-5">Edit</a>
+                                    <a asp-area="Admin" asp-controller="AdminSizes" asp-action="Details" asp-route-id="@item.SizeID" class="btn btn-info m-r-5">Details</a>
+                                    <a asp-area="Admin" asp-controller="AdminSizes" asp-action="Delete" asp-route-id="@item.SizeID" class="btn btn-warning m-r-5">Delete</a>
+
+                                </td>
+                            </tr>
+
+                        }
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

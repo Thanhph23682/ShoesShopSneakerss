@@ -1,0 +1,135 @@
+﻿@model APPDATA.Models.Products
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a class="breadcrumb-item" asp-area="Admin" asp-controller="AdminProducts" asp-action="Index">Danh sách sản phẩm</a>
+            <span class="breadcrumb-item active">Thêm mới sản phẩm</span>
+        </nav>
+    </div>
+</div>
+<form asp-controller="AdminProducts" enctype="multipart/form-data">
+    <div class="page-header no-gutters has-tab">
+        <div class="d-md-flex m-b-15 align-items-center justify-content-between">
+            <div class="media align-items-center m-b-15">
+            </div>
+            <div class="m-b-15">
+                <button class="btn btn-primary">
+                    <i class="anticon anticon-save"></i>
+                    <span>Save</span>
+                </button>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Basic Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#product-edit-option">Option Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#product-edit-description">Description</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="font-weight-semibold" for="productName">Tên sản phẩm</label>
+                        <input type="text" class="form-control" asp-for="NameProduct">
+                    </div>
+
+
+
+
+
+
+
+                    <div class="form-group col-md-6">
+                        <label class="font-weight-semibold" for="CategoryID">Danh mục sản phẩm</label>
+                        <select class="custom-select" asp-for="CategoryID" style="min-width: 200px" asp-items="ViewBag.DanhMuc">
+                            <option value="" disabled selected>Chọn danh mục</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="font-weight-semibold" for="BrandID">Thương hiệu sản phẩm</label>
+                        <select class="custom-select" asp-for="BrandID" style="min-width: 200px" asp-items="ViewBag.Brands">
+                            <option value="" disabled selected>Chọn thương hiệu</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="font-weight-semibold" for="productPrice">Giá bán</label>
+                        <input type="text" class="form-control" asp-for="Price">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="font-weight-semibold" for="Thumbnail">Thumbnail</label>
+                        <input type="text" class="form-control" asp-for="Thumbnail">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="font-weight-semibold" for="ImagePath">Ảnh</label>
+                        <input type="text" class="form-control" asp-for="ImagePath">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="product-edit-option">
+            <div class="card">
+                <div class="card-body">
+                 
+                    <div class="form-group">
+                        <label class="font-weight-semibold" for="Alias">Alias</label>
+                        <input type="text" class="form-control" asp-for="Alias">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="product-edit-description">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <label class="font-weight-semibold">Nội dung:</label>
+                        <textarea type="text" class="form-control" asp-for="Desciption"></textarea>
+                        <span asp-validation-for="Desciption" class="text-danger"></span>
+
+                        <div id="Description"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</form>
+<script>
+    $('#Description').summernote({
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'italic', 'underline', 'clear']],
+            ['fontname', ['fontname']],
+            ['fontsize', ['fontsize']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['height', ['height']],
+
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+</script>

@@ -1,0 +1,31 @@
+﻿@model APPDATA.Models.Slider
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Slider</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SliderImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SliderImage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SliderStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SliderStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.SliderID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

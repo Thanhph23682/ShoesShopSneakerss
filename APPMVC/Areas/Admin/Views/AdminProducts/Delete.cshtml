@@ -1,0 +1,132 @@
+﻿@model APPDATA.Models.Products
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a class="breadcrumb-item" asp-area="Admin" asp-controller="AdminProducts" asp-action="Index">Danh sách sản phẩm</a>
+            <span class="breadcrumb-item active">Thông tin sản phẩm: @Model.NameProduct</span>
+        </nav>
+    </div>
+</div>
+
+
+<div class="page-header no-gutters has-tab">
+    <div class="d-md-flex m-b-15 align-items-center justify-content-between">
+        <div class="media align-items-center m-b-15">
+        </div>
+        <div class="m-b-15">
+
+            <a class="btn btn-primary" asp-area="Admin" asp-controller="AdminProducts" asp-action="Edit" asp-route-id="@Model.ProductID">Edit</a>
+        </div>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Basic Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#product-edit-option">Images products</a>
+        </li>
+
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+
+
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">XÁC NHẬN XÓA SẢN PHẨM: @Model.NameProduct.ToUpper()</h4>
+                    <div class="table-responsive">
+                        <form asp-action="Delete" asp-route-id="@Model.ProductID">
+                            <h4 class="card-title">Thông tin sản phẩm: @Model.NameProduct</h4>
+                            <div class="table-responsive">
+                                <table class="product-info-table m-t-20">
+                                    <tbody>
+                                        <tr>
+                                            <td>ID:</td>
+                                            <td class="text-dark font-weight-semibold">@Model.ProductID</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tên sản phẩm:</td>
+                                            <td>@Model.NameProduct</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thương hiệu:</td>
+                                            <td>@Model.Brand.Name</td>
+                                        </tr>
+                                        <tr>
+
+
+                                            <td>Danh mục:</td>
+                                            <td>@Model.Category.Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Giá bán:</td>
+                                            <td>@Model.Price</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Ngày tạo:</td>
+                                            <td>@Model.CreateDate</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thumbnail:</td>
+                                            <td>@Model.Thumbnail</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alias:</td>
+                                            <td>@Model.Alias</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Xác nhận xóa Page</td>
+                                            <td>
+                                                <input type="submit" value="Xác nhận xóa" class="btn btn-danger" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">THÔNG TIN MÔ TẢ</h4>
+                </div>
+                <div class="card-body">
+                    @Html.Raw(Model.Desciption)
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="product-images">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid" src="~/images/Products/@Model.ImagePath" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

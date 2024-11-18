@@ -1,0 +1,67 @@
+﻿@model IEnumerable<APPDATA.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <a class="btn btn-secondary m-r-5" asp-area="Admin" asp-controller="AdminCategories" asp-action="Create">Create</a>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tên danh mục</th>
+                        <th scope="col">Mô tả</th>
+                        <th scope="col">Ảnh</th>
+                        <th scope="col">Trạng thái</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td scope="row">@item.CategoryID</td>
+                                <td scope="row">@item.Name</td>
+                                <td scope="row">@item.Description</td>
+                                <td scope="row">@item.Images</td>
+                                <td>
+
+                                    @if (item.Status == 1)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-success badge-dot m-r-10"></div>
+                                            <div>Hoạt động</div>
+                                        </div>
+                                    }
+                                    else if (item.Status == 0)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-warning badge-dot m-r-10"></div>
+                                            <div>Khóa</div>
+                                        </div>
+                                    }
+                                </td>
+                                <td>
+
+                                    <a asp-area="Admin" asp-controller="AdminCategories" asp-action="Edit" asp-route-id="@item.CategoryID" class="btn btn-success m-r-5">Edit</a>
+                                    <a asp-area="Admin" asp-controller="AdminCategories" asp-action="Details" asp-route-id="@item.CategoryID" class="btn btn-info m-r-5">Details</a>
+                                    <a asp-area="Admin" asp-controller="AdminCategories" asp-action="Delete" asp-route-id="@item.CategoryID" class="btn btn-warning m-r-5">Delete</a>
+
+                                </td>
+                            </tr>
+
+                        }
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
