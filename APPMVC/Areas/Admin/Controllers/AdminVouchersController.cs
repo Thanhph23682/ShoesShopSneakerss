@@ -66,7 +66,7 @@ namespace APPMVC.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CustomerID"] = new SelectList(_context.Customers, "Id", "Email", voucher.CustomerID);
+            //ViewData["CustomerID"] = new SelectList(_context.Customers, "Id", "Email", voucher.CustomerID);
             return View(voucher);
         }
 

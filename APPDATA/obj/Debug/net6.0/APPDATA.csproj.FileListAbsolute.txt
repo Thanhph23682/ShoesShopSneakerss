@@ -4,3 +4,33 @@ C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyI
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.deps.json
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.runtimeconfig.json
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.dll
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.pdb
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.dll
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\refint\APPDATA.dll
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.pdb
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.genruntimeconfig.cache
+C:\Users\admin\Documents\Datn_Mới 1\APPDATA\obj\Debug\net6.0\ref\APPDATA.dll
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.deps.json
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.runtimeconfig.json
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.dll
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\bin\Debug\net6.0\APPDATA.pdb
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.csproj.AssemblyReference.cache
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfoInputs.cache
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.dll
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\refint\APPDATA.dll
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.pdb
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\APPDATA.genruntimeconfig.cache
+C:\Users\FPT\Downloads\Datn_Mới 1\Datn_Mới 1\APPDATA\obj\Debug\net6.0\ref\APPDATA.dll

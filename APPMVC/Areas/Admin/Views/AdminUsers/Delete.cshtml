@@ -1,64 +1,98 @@
 ﻿@model APPDATA.Models.User
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Xóa Tài Khoản";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Delete</h1>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>User</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FullName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhoneNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Role)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Role.RoleName)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+    <!-- Feather Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5 & Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="/js/datatables/datatables-simple-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-4">
+        <!-- Return to Home -->
+        <div class="col-auto mb-3">
+            <a asp-action="Index" class="btn btn-sm btn-light text-primary">
+                <i class="me-1" data-feather="arrow-left"></i> Quay lại trang chủ
+            </a>
+        </div>
+
+        <!-- Confirmation Section -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-danger">XÁC NHẬN XÓA TÀI KHOẢN: @Model.UserName</h4>
+                        <p class="text-center text-muted">Bạn có chắc chắn muốn xóa tài khoản này không?</p>
+
+                        <!-- User Details Table -->
+                        <table class="table table-bordered mt-3">
+                            <tbody>
+                                <tr>
+                                    <th>Chức vụ:</th>
+                                    <td>@Model.Role.RoleName</td>
+                                </tr>
+                                <tr>
+                                    <th>Họ và tên:</th>
+                                    <td>@Model.FullName</td>
+                                </tr>
+                                <tr>
+                                    <th>Tài khoản:</th>
+                                    <td>@Model.UserName</td>
+                                </tr>
+                                <tr>
+                                    <th>Số điện thoại:</th>
+                                    <td>@Model.PhoneNumber</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Ảnh đại diện:</th>
+                                    <td>
+                                        <img src="~/images/user/@Model.Image" class="img-fluid" width="150" height="150" alt="User Image" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Trạng thái:</th>
+                                    <td>@Model.Status</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Form for Deletion -->
+                        <form asp-action="Delete" asp-route-id="@Model.ID">
+                            <div class="d-flex justify-content-between mt-4">
+                                <button type="submit" class="btn btn-danger">Xóa tài khoản</button>
+                                <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
