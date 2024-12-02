@@ -463,7 +463,6 @@ namespace APPDATA.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
@@ -507,7 +506,7 @@ namespace APPDATA.Migrations
                     b.Property<DateTime>("CreatDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CustomerID")
+                    b.Property<int?>("CustomerID")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -523,9 +522,6 @@ namespace APPDATA.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserID")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
@@ -726,8 +722,6 @@ namespace APPDATA.Migrations
                     b.HasOne("APPDATA.Models.Customer", "Customer")
                         .WithMany("Vouchers")
                         .HasForeignKey("CustomerID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
                         .HasConstraintName("FK_Voucher_Customers");
 
                     b.Navigation("Customer");

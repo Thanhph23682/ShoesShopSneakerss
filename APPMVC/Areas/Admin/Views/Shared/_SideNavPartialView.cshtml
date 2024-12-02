@@ -32,6 +32,7 @@
                 </a>
              
             </li>
+            @* Quản lý sản phẩm *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascript:void(0);">
                     <span class="icon-holder">
@@ -61,19 +62,27 @@
                     <li>
                         <a asp-area="Admin" asp-controller="AdminColors" asp-action="Index">Quản lí màu sắc</a>
                     </li>
-
+                    
 
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+                <a class="dropdown-toggle">
                     <span class="icon-holder">
-                        <i class="anticon anticon-appstore"></i>
+                        <i class="anticon anticon-pie-chart"></i>
                     </span>
                     <span class="title">Quản lý Voucher</span>
-
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
                 </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a asp-area="Admin" asp-controller="AdminVouchers" asp-action="Index">Danh sách voucher</a>
+                    </li>
 
+
+                </ul>
             </li>
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle">
@@ -87,10 +96,10 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a asp-area="Admin" asp-controller="AdminCustomers" asp-action="Index">Quản lí nhân viên</a>
+                        <a asp-area="Admin" asp-controller="AdminCustomers" asp-action="Index">Quản lí khách hàng</a>
                     </li>
                     <li>
-                        <a asp-area="Admin" asp-controller="AdminUsers" asp-action="Index">Quản lí khách hàng</a>
+                        <a asp-area="Admin" asp-controller="AdminUsers" asp-action="Index">Quản lí nhân viên</a>
                     </li>
 
 

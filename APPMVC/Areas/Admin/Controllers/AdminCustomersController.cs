@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using APPDATA.DB;
 using APPDATA.Models;
+using FPolyShopSneakers.Helpper;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace APPMVC.Areas.Admin.Controllers
 {
@@ -14,15 +16,18 @@ namespace APPMVC.Areas.Admin.Controllers
     public class AdminCustomersController : Controller
     {
         private readonly ShopDbContext _context;
+        private readonly INotyfService _NotyfService; // Corrected to use INotyfService instead of object
 
-        public AdminCustomersController(ShopDbContext context)
+        public AdminCustomersController(ShopDbContext context, INotyfService notyfService)
         {
             _context = context;
+            _NotyfService = notyfService;
         }
 
         // GET: Admin/AdminCustomers
         public async Task<IActionResult> Index()
         {
+            ViewData["RoleId"] = new SelectList(_context.Roles, "ID", "RoleName");
             var shopDbContext = _context.Customers.Include(c => c.Role);
             return View(await shopDbContext.ToListAsync());
         }
@@ -54,19 +59,31 @@ namespace APPMVC.Areas.Admin.Controllers
         }
 
         // POST: Admin/AdminCustomers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,RoleId,Email,FullName,PhoneNumber,Address,Password,Image,BirthDay,CreateDate,Status")] Customer customer)
+        public async Task<IActionResult> Create([Bind("Id,RoleId,Email,FullName,PhoneNumber,Address,Password,Image,BirthDay,CreateDate,Status")] Customer customer, IFormFile ImageFile)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                customer.FullName = Utilities.ToTitleCase(customer.FullName);
+                customer.BirthDay = customer.BirthDay ?? DateTime.Now;
+                if (ImageFile != null)
+                {
+                    string extension = Path.GetExtension(ImageFile.FileName);
+                    string images = Utilities.SEOUrl(customer.FullName) + extension; // Corrected from user.UserName to customer.UserName
+                    customer.Image = await Utilities.UploadFile(ImageFile, @"Customer", images.ToLower());
+                }
+                if (string.IsNullOrEmpty(customer.Image)) customer.Image = "default.jpg";
+               
+                
                 _context.Add(customer);
                 await _context.SaveChangesAsync();
+                _NotyfService.Success("Tạo mới tài khoản thành công");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RoleId"] = new SelectList(_context.Roles, "ID", "RoleName", customer.RoleId);
+            
+
             return View(customer);
         }
 
@@ -88,32 +105,41 @@ namespace APPMVC.Areas.Admin.Controllers
         }
 
         // POST: Admin/AdminCustomers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RoleId,Email,FullName,PhoneNumber,Address,Password,Image,BirthDay,CreateDate,Status")] Customer customer)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,RoleId,Email,FullName,PhoneNumber,Address,Password,Image,BirthDay,CreateDate,Status")] Customer customer, IFormFile ImageFile)
         {
             if (id != customer.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
+                    customer.FullName = Utilities.ToTitleCase(customer.FullName);
+                    if (ImageFile != null)
+                    {
+                        string extension = Path.GetExtension(ImageFile.FileName);
+                        string images = Utilities.SEOUrl(customer.FullName) + extension;
+                        customer.Image = await Utilities.UploadFile(ImageFile, @"Customer", images.ToLower());
+                    }
+                    if (string.IsNullOrEmpty(customer.Image)) customer.Image = "default.jpg";
+
                     _context.Update(customer);
                     await _context.SaveChangesAsync();
+                    _NotyfService.Success("Cập nhật tài khoản thành công");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CustomerExists(customer.Id))
+                    if (!CustomerExists(customer.Id))  // Corrected user.ID to customer.Id
                     {
                         return NotFound();
                     }
                     else
                     {
+                        _NotyfService.Error("Có lỗi xảy ra");
                         throw;
                     }
                 }
@@ -149,21 +175,22 @@ namespace APPMVC.Areas.Admin.Controllers
         {
             if (_context.Customers == null)
             {
-                return Problem("Entity set 'ShopDbContext.Customers'  is null.");
+                return Problem("Entity set 'ShopDbContext.Customers' is null.");
             }
             var customer = await _context.Customers.FindAsync(id);
             if (customer != null)
             {
                 _context.Customers.Remove(customer);
             }
-            
+
             await _context.SaveChangesAsync();
+            _NotyfService.Success("Xóa tài khoản thành công");
             return RedirectToAction(nameof(Index));
         }
 
         private bool CustomerExists(int id)
         {
-          return (_context.Customers?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Customers?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
