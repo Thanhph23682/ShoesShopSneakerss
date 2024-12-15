@@ -1,169 +1,250 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using APPDATA.DB;
+﻿using APPDATA.DB;
 using APPDATA.Models;
+
+using AspNetCoreHero.ToastNotification.Abstractions;
+using AspNetCoreHero.ToastNotification.Notyf;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.IO;
 
 namespace APPMVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Route("AdminPayments")]
     public class AdminPaymentsController : Controller
     {
         private readonly ShopDbContext _context;
+        private readonly INotyfService _NotyfService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public AdminPaymentsController(ShopDbContext context)
+
+
+
+
+        public AdminPaymentsController(ShopDbContext context, INotyfService notyfService, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _NotyfService = notyfService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
-        // GET: Admin/AdminPayments
+        
+
         public async Task<IActionResult> Index()
         {
-            var shopDbContext = _context.Payments.Include(p => p.Order);
-            return View(await shopDbContext.ToListAsync());
+
+            //var payments = _context.Payments
+            //                          .Select(p => new Payment
+            //                          {
+            //                              PaymentID = p.PaymentID,
+            //                              PaymentMethod = p.PaymentMethod,
+            //                              PaymentDescription = p.PaymentDescription,
+            //                              PaymentImage = p.PaymentImage // Đảm bảo đây là tên ảnh đã lưu
+            //                          })
+            //                          .ToList();
+
+            //return View(payments); //
+            var payments = await _context.Payments.ToListAsync();
+            return View(payments);
+
         }
-
-        // GET: Admin/AdminPayments/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Payments == null)
-            {
-                return NotFound();
-            }
-
-            var payment = await _context.Payments
-                .Include(p => p.Order)
-                .FirstOrDefaultAsync(m => m.PaymentID == id);
-            if (payment == null)
-            {
-                return NotFound();
-            }
-
-            return View(payment);
-        }
-
-        // GET: Admin/AdminPayments/Create
-        public IActionResult Create()
-        {
-            ViewData["OrderID"] = new SelectList(_context.Orders, "Id", "Id");
-            return View();
-        }
-
-        // POST: Admin/AdminPayments/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PaymentID,OrderID,PaymentMethod,PaymentDescription,PaymentImage")] Payment payment)
+        [Route("AddPaymentMethod")]
+        public async Task<IActionResult> AddPaymentMethod([FromForm] string paymentMethod, [FromForm] string paymentDesc, [FromForm] IFormFile? paymentImg)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(paymentMethod) && !string.IsNullOrEmpty(paymentDesc))
             {
-                _context.Add(payment);
+                var payment = new Payment
+                {
+                    PaymentMethod = paymentMethod,
+                    PaymentDescription = paymentDesc
+                };
+
+                if (paymentImg != null && paymentImg.Length > 0)
+                {
+                    // Tạo tên file duy nhất
+                    string fileName = $"payment_{DateTime.Now:yyyyMMddHHmmss}_{Guid.NewGuid()}{Path.GetExtension(paymentImg.FileName)}";
+
+                    // Đường dẫn lưu file
+                    var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img", "payment");
+                    if (!Directory.Exists(uploadPath))
+                    {
+                        Directory.CreateDirectory(uploadPath);
+                    }
+
+                    var filePath = Path.Combine(uploadPath, fileName);
+
+                    // Lưu file
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await paymentImg.CopyToAsync(stream);
+                    }
+
+                    // Lưu tên file vào database
+                    payment.PaymentImage = fileName;
+                }
+
+                _context.Payments.Add(payment);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+              _NotyfService.Success("Thêm phương thức thanh toán thành công!");
+                return Json(new { success = true });
             }
-            ViewData["OrderID"] = new SelectList(_context.Orders, "Id", "Id", payment.OrderID);
-            return View(payment);
+
+            return Json(new { success = false });
         }
 
-        // GET: Admin/AdminPayments/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        //[HttpPost]
+        //[Route("AddPaymentMethod")]
+        //public async Task<IActionResult> AddPaymentMethod([FromForm] string paymentMethod, [FromForm] string paymentDesc, [FromForm] IFormFile? paymentImg)
+        //{
+        //    try
+        //    {
+        //        if (string.IsNullOrEmpty(paymentMethod) || string.IsNullOrEmpty(paymentDesc))
+        //        {
+        //            _NotyfService.Error("Please provide all required information.");
+        //            return Json(new { success = false, message = "Please provide all required information." });
+        //        }
+
+        //        var payment = new Payment
+        //        {
+        //            PaymentMethod = paymentMethod,
+        //            PaymentDescription = paymentDesc
+        //        };
+
+        //        if (paymentImg != null && paymentImg.Length > 0)
+        //        {
+        //            var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img", "payment");
+        //            if (!Directory.Exists(uploadsFolder))
+        //            {
+        //                Directory.CreateDirectory(uploadsFolder);
+        //            }
+
+        //            var uniqueFileName = $"payment_{DateTime.Now:yyyyMMddHHmmss}{Path.GetExtension(paymentImg.FileName)}";
+        //            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+        //            using (var fileStream = new FileStream(filePath, FileMode.Create))
+        //            {
+        //                await paymentImg.CopyToAsync(fileStream);
+        //            }
+
+        //            payment.PaymentImage = $"/assets/img/payment/{uniqueFileName}";
+        //        }
+
+        //        _context.Payments.Add(payment);
+        //        await _context.SaveChangesAsync();
+
+        //        _NotyfService.Success("Payment method added successfully!");
+        //        return Json(new { success = true, message = "Payment method added successfully!" });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _NotyfService.Error($"Error: {ex.Message}");
+        //        return Json(new { success = false, message = ex.Message });
+        //    }
+        //}
+
+        //[HttpPost]
+        //[Route("AddPaymentMethod")]
+        //public async Task<IActionResult> AddPaymentMethod(IFormFile? paymentImg, string paymentMethod, string paymentDesc)
+        //{
+        //    //if (string.IsNullOrEmpty(paymentMethod) || string.IsNullOrEmpty(paymentDesc))
+        //    //{
+        //    //    return Json(new { success = false, message = "Vui lòng nhập đầy đủ thông tin." });
+        //    //}
+
+        //    //string imagePath = null;
+
+        //    //if (paymentImg != null)
+        //    //{
+        //    //    var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+        //    //    var fileExtension = Path.GetExtension(paymentImg.FileName).ToLower();
+
+        //    //    if (!allowedExtensions.Contains(fileExtension))
+        //    //    {
+        //    //        return Json(new { success = false, message = "Chỉ cho phép ảnh định dạng jpg, jpeg hoặc png." });
+        //    //    }
+
+        //    //    if (paymentImg.Length > 5 * 1024 * 1024)
+        //    //    {
+        //    //        return Json(new { success = false, message = "Ảnh vượt quá 5MB." });
+        //    //    }
+
+        //    //    var fileName = $"payment_{DateTime.Now:yyyyMMdd_HHmmss}_{Guid.NewGuid()}{fileExtension}";
+        //    //    var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img", "payment", fileName);
+
+        //    //    var directoryPath = Path.GetDirectoryName(filePath);
+        //    //    if (!Directory.Exists(directoryPath))
+        //    //    {
+        //    //        Directory.CreateDirectory(directoryPath);
+        //    //    }
+        //    //    //string DefaultImagePath = HttpContext.Current.Server.MapPath("~/NoImage.jpg");
+
+        //    //    //byte[] imageArray = System.IO.File.ReadAllBytes(DefaultImagePath);
+        //    //    //string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+
+        //    //    try
+        //    //    {
+
+        //    //        using (var stream = new FileStream(filePath, FileMode.Create))
+        //    //        {
+        //    //            await paymentImg.CopyToAsync(stream);
+        //    //        }
+        //    //        imagePath = $"/assets/img/payment/{fileName}";
+        //    //    }
+        //    //    catch (Exception ex)
+        //    //    {
+        //    //        return Json(new { success = false, message = $"Lỗi khi lưu ảnh: {ex.Message}" });
+        //    //    }
+        //    //}
+
+        //    //var payment = new Payment
+        //    //{
+        //    //    PaymentMethod = paymentMethod,
+        //    //    PaymentDescription = paymentDesc,
+        //    //    PaymentImage = imagePath,
+        //    //};
+
+        //    //try
+        //    //{
+        //    //    _context.Payments.Add(payment);
+        //    //    await _context.SaveChangesAsync();
+        //    //    _NotyfService.Success("Thêm phương thức thanh toán thành công!");
+        //    //    return Json(new { success = true });
+        //    //}
+        //    //catch (Exception ex)
+        //    //{
+        //    //    return Json(new { success = false, message = $"Lỗi khi lưu dữ liệu: {ex.Message}" });
+        //    //}
+
+        //}
+
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="paymentId"></param>
+        /// <returns></returns>
+
+        [Route("DeletePaymentMethod")]
+        public IActionResult DeletePaymentMethod(int paymentId)
         {
-            if (id == null || _context.Payments == null)
-            {
-                return NotFound();
-            }
-
-            var payment = await _context.Payments.FindAsync(id);
-            if (payment == null)
-            {
-                return NotFound();
-            }
-            ViewData["OrderID"] = new SelectList(_context.Orders, "Id", "Id", payment.OrderID);
-            return View(payment);
-        }
-
-        // POST: Admin/AdminPayments/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PaymentID,OrderID,PaymentMethod,PaymentDescription,PaymentImage")] Payment payment)
-        {
-            if (id != payment.PaymentID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(payment);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PaymentExists(payment.PaymentID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["OrderID"] = new SelectList(_context.Orders, "Id", "Id", payment.OrderID);
-            return View(payment);
-        }
-
-        // GET: Admin/AdminPayments/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Payments == null)
-            {
-                return NotFound();
-            }
-
-            var payment = await _context.Payments
-                .Include(p => p.Order)
-                .FirstOrDefaultAsync(m => m.PaymentID == id);
-            if (payment == null)
-            {
-                return NotFound();
-            }
-
-            return View(payment);
-        }
-
-        // POST: Admin/AdminPayments/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Payments == null)
-            {
-                return Problem("Entity set 'ShopDbContext.Payments'  is null.");
-            }
-            var payment = await _context.Payments.FindAsync(id);
+            Payment payment = _context.Payments.FirstOrDefault(x => x.PaymentID == paymentId);
             if (payment != null)
             {
                 _context.Payments.Remove(payment);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+                _context.SaveChanges();
+                
+                // Hiển thị thông báo thành công
+              _NotyfService.Success("Xóa phương thức thanh toán thành công!");
 
-        private bool PaymentExists(int id)
-        {
-          return (_context.Payments?.Any(e => e.PaymentID == id)).GetValueOrDefault();
+                return Json(new { success = true });
+            }
+
+            return Json(new { success = false });
         }
     }
 }

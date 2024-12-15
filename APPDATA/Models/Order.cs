@@ -13,9 +13,10 @@ namespace APPDATA.Models
         [Key]
 
         public int Id { get; set; }
+        //public int PaymentID { get; set; }
         public int UserId { get; set; } 
         public int CustomerId { get; set; } 
-        public int Payment_Status { get; set; }
+        public int? Payment_Status { get; set; }
         public int? Order_Status { get; set; } = null;
         public DateTime? Order_Date { get; set; } = null;
         public DateTime? Update_Date { get; set; } = null;
@@ -25,9 +26,12 @@ namespace APPDATA.Models
         public string? Order_Name { get; set; } = null;
         public string? Order_Address { get; set; } = null;
         public ICollection<OrderDetail>? OrderDetails { get; set; }
-        public ICollection<Payment>? Payments { get; set; }
+        public virtual ICollection<Payment> Payments { get; set; }
+
+        //public virtual Payment? Payments { get; set; }
         public virtual User? User { get; set; }
         public virtual Customer? Customer { get; set; }
+        
 
     }
 }

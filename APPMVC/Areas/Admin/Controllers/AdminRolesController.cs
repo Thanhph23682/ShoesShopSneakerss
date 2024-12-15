@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using APPDATA.DB;
 using APPDATA.Models;
-using AspNetCoreHero.ToastNotification.Notyf;
 using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace APPMVC.Areas.Admin.Controllers
@@ -18,11 +17,12 @@ namespace APPMVC.Areas.Admin.Controllers
         private readonly ShopDbContext _context;
         public INotyfService _NotyfService { get; }
 
+       
+
         public AdminRolesController(ShopDbContext context, INotyfService notyfService)
         {
             _context = context;
             _NotyfService = notyfService;
-
         }
 
         // GET: Admin/AdminRoles
@@ -68,8 +68,7 @@ namespace APPMVC.Areas.Admin.Controllers
             {
                 _context.Add(role);
                 await _context.SaveChangesAsync();
-                _NotyfService.Success("Tạo mới thành công");
-
+                _NotyfService.Success("Tạo mới chức vụ thành công");
                 return RedirectToAction(nameof(Index));
             }
             return View(role);
@@ -108,17 +107,14 @@ namespace APPMVC.Areas.Admin.Controllers
                 try
                 {
                     _context.Update(role);
+                    _NotyfService.Success("Cập nhật chức vụ thành công");
                     await _context.SaveChangesAsync();
-                    _NotyfService.Success("Cập nhật thành công");
-
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!RoleExists(role.ID))
                     {
                         return NotFound();
-                        _NotyfService.Error("Có lỗi xảy ra");
-
                     }
                     else
                     {
@@ -161,11 +157,10 @@ namespace APPMVC.Areas.Admin.Controllers
             if (role != null)
             {
                 _context.Roles.Remove(role);
-                _NotyfService.Success("Xóa thành công");
-
             }
-
+            
             await _context.SaveChangesAsync();
+            _NotyfService.Success("Xóa chức vụ thành công");
             return RedirectToAction(nameof(Index));
         }
 

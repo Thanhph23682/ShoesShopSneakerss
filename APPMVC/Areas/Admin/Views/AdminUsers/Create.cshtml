@@ -5,56 +5,180 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Create</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="RoleID" class="control-label"></label>
-                <select asp-for="RoleID" class ="form-control" asp-items="ViewBag.RoleID"></select>
+    <!-- Feather Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome (nếu cần) -->
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Các thư viện khác -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="~/js/datatables/datatables-simple-demo.js"></script>
+    <script src="~/js/vendors.min.js"></script>
+
+    <script src="/js/datatables/datatables-simple-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="col-auto mb-3">
+        <h1 class="page-header-title">
+            <div class="page-header-icon">
+                <a asp-action="Index" class="btn btn-sm btn-light text-primary">
+                    <i class="me-1" data-feather="arrow-left"></i>Quay trở lại trang chủ
+                </a>
             </div>
-            <div class="form-group">
-                <label asp-for="UserName" class="control-label"></label>
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
-                <span asp-validation-for="Image" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </h1>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Form to create a new user -->
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div class="container-xl px-4 mt-4">
+            <div class="row">
 
+                <!-- Profile Picture Section -->
+                <!-- Profile Picture Section -->
+                <div class="col-md-4 d-flex justify-content-center">
+                <div class="card mb-4 shadow-sm" style="background-color: #f8f9fa; border-radius: 8px; width: 100%;">
+                    <div class="card-header" style="background-color: #e9f5f9; border-bottom: 2px solid #b6e4f3; padding: 15px 0; text-align: center;">
+                        <strong>Ảnh đại diện</strong>
+                    </div>
+                    <div class="card-body text-center">
+                        <!-- Preview Image -->
+                        @*  <img id="imagePreview" class="img-account-profile avar-image-disp rounded-circle mb-2"
+                        src="~/images/Customer/default.jpg" alt="Ảnh đại diện xem trước"
+                        style="max-width: 150px; max-height: 150px; object-fit: cover;" /> *@
+                        <img id="imagePreview" class="img-account-profile avar-image-disp rounded-circle mb-2"
+                             src="~/images/User" alt="Ảnh đại diện xem trước"
+                             style="max-width: 150px; max-height: 150px; object-fit: cover;" />
+                        <!-- Image Selection Guide -->
+                        <div class="small font-italic text-muted mb-4">Ảnh JPG hoặc PNG</div>
+                        <!-- Image Input -->
+                        <input type="file" name="ImageFile" class="form-control" asp-for="Image" multiple style="border: 2px solid #b6e4f3; border-radius: 6px; padding: 8px;" onchange="previewImage(event)" />
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Account Information Section -->
+                <div class="col-md-8">
+                    <div class="card mb-4 shadow-sm" style="background-color: #f8f9fa; border-radius: 8px;">
+                        <div class="card-header" style="background-color: #e9f5f9; border-bottom: 2px solid #b6e4f3; padding: 15px 0; text-align: center;">
+                            <strong>Thông tin tài khoản</strong>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Validation Error Message -->
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                            <!-- Role Selection -->
+                            <div class="form-group mb-3">
+                                <label asp-for="RoleID" class="form-label">Chức vụ:</label>
+                                <select asp-for="RoleID" class="form-select"
+                                        style="border: 2px solid #b6e4f3; border-radius: 6px; padding: 8px; height: 46px;"
+                                        asp-items="ViewBag.RoleID">
+                                    <option selected disabled>Chọn chức vụ:</option>
+                                </select>
+                            </div>
+
+                            <!-- Full Name Input -->
+                            <div class="form-group mb-3">
+                                <label asp-for="FullName" class="form-label">Họ và tên:</label>
+                                <input asp-for="FullName" class="form-control" type="text"
+                                       style="border: 2px solid #b6e4f3; border-radius: 6px;"
+                                       placeholder="Nhập họ và tên đầy đủ" />
+                            </div>
+
+                            <!-- Username Input -->
+                            <div class="form-group mb-3">
+                                <label asp-for="UserName" class="form-label">Tài khoản:</label>
+                                <input asp-for="UserName" class="form-control" type="text"
+                                       style="border: 2px solid #b6e4f3; border-radius: 6px;"
+                                       placeholder="Nhập tên tài khoản" />
+                            </div>
+
+                            <!-- Phone Number Input -->
+                            <div class="form-group mb-3">
+                                <label asp-for="PhoneNumber" class="form-label">Số điện thoại:</label>
+                                <input asp-for="PhoneNumber" class="form-control" type="number"
+                                       style="border: 2px solid #b6e4f3; border-radius: 6px;"
+                                       placeholder="Nhập số điện thoại" />
+                            </div>
+
+                            <!-- Password Input -->
+                            <div class="form-group mb-3">
+                                <label asp-for="Password" class="form-label">Mật khẩu:</label>
+                                <div class="input-group">
+                                    <input asp-for="Password" id="passwordInput" class="form-control" type="text"
+                                           style="border: 2px solid #b6e4f3; border-radius: 6px;"
+                                           placeholder="Nhập mật khẩu" />
+                                    <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
+                                        <i class="fa fa-eye" id="eyeIcon"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Status Selection -->
+                            <div class="form-group mb-3">
+                                <label asp-for="Status" class="form-label">Trạng thái:</label>
+                                <select asp-for="Status" class="form-select"
+                                        style="border: 2px solid #b6e4f3; border-radius: 6px; padding: 8px; height: 46px;">
+                                    <option selected disabled>Trạng thái:</option>
+                                    <option value="1">Hoạt động</option>
+                                    <option value="0">Không hoạt động</option>
+                                </select>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">Thêm tài khoản</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Script to Preview Image Before Upload -->
+    <script>
+         togglePassword.addEventListener('click', function () {
+        // Kiểm tra xem input có đang được ẩn hay không
+        if (passwordInput.type === 'text') {
+            passwordInput.type = 'password'; // Ẩn mật khẩu
+            eyeIcon.classList.remove('fa-eye'); // Thay đổi biểu tượng con mắt
+            eyeIcon.classList.add('fa-eye-slash'); // Thêm biểu tượng con mắt bị gạch chéo
+        } else {
+            passwordInput.type = 'text'; // Hiển thị mật khẩu
+            eyeIcon.classList.remove('fa-eye-slash'); // Thay đổi biểu tượng con mắt
+            eyeIcon.classList.add('fa-eye'); // Thêm biểu tượng con mắt mở
+        }
+    });
+        function previewImage(event) {
+            const file = event.target.files[0];  // Get the selected file
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const preview = document.getElementById('imagePreview');
+                preview.src = e.target.result;  // Set the image source for preview
+            };
+
+            if (file) {
+                reader.readAsDataURL(file);  // Read the file as a Data URL to display the image
+            }
+        }
+        feather.replace();
+    </script>
+</body>
+</html>

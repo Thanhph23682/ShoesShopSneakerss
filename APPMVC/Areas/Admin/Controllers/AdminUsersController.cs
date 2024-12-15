@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using APPDATA.Models;
+using AspNetCoreHero.ToastNotification.Abstractions;
+using FPolyShopSneakers.Helpper;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.CodeAnalysis.Scripting;
 using APPDATA.DB;
-using APPDATA.Models;
 
 namespace APPMVC.Areas.Admin.Controllers
 {
@@ -14,15 +13,18 @@ namespace APPMVC.Areas.Admin.Controllers
     public class AdminUsersController : Controller
     {
         private readonly ShopDbContext _context;
+        public INotyfService _NotyfService { get; }
 
-        public AdminUsersController(ShopDbContext context)
+        public AdminUsersController(ShopDbContext context, INotyfService notyfService)
         {
             _context = context;
+            _NotyfService = notyfService;
         }
 
         // GET: Admin/AdminUsers
         public async Task<IActionResult> Index()
         {
+            ViewData["RoleID"] = new SelectList(_context.Roles, "ID", "RoleName");
             var shopDbContext = _context.Users.Include(u => u.Role);
             return View(await shopDbContext.ToListAsync());
         }
@@ -54,22 +56,52 @@ namespace APPMVC.Areas.Admin.Controllers
         }
 
         // POST: Admin/AdminUsers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,RoleID,UserName,FullName,Password,PhoneNumber,Image,Status")] User user)
+        public async Task<IActionResult> Create([Bind("ID,RoleID,UserName,FullName,Password,PhoneNumber,Image,Status")] User user, IFormFile ImageFile)
         {
+
+            //// Giả lập (fake) dữ liệu khi không có dữ liệu từ form
+            //if (user == null || string.IsNullOrEmpty(user.UserName))
+            //{
+            //    user = new User
+            //    {
+            //        UserName = "admin",  // Tên tài khoản giả lập
+            //        FullName = "Admin ",  // Tên đầy đủ giả lập
+            //        Password = "admin",  // Mật khẩu giả lập
+            //        PhoneNumber = 0123456789,  // Số điện thoại giả lập
+            //        Status = 1,  // Trạng thái tài khoản "Hoạt động"
+            //        RoleID = _context.Roles.FirstOrDefault(r => r.RoleName == "Admin").ID,  // Gán quyền admin
+            //        Image = "default.jpg"  // Ảnh mặc định
+            //    };
+            //}
+
             if (ModelState.IsValid)
             {
+                user.UserName = Utilities.ToTitleCase(user.UserName);
+                if (ImageFile != null)
+                {
+                    string extension = Path.GetExtension(ImageFile.FileName);
+                    string images = Utilities.SEOUrl(user.UserName) + extension;
+                    user.Image = await Utilities.UploadFile(ImageFile, @"User", images.ToLower());
+                }
+                if (string.IsNullOrEmpty(user.Image)) user.Image = "default.jpg";
+
+
+
                 _context.Add(user);
                 await _context.SaveChangesAsync();
+                _NotyfService.Success("Tạo mới tài khoản thành công");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RoleID"] = new SelectList(_context.Roles, "ID", "RoleName", user.RoleID);
+            ViewData["Roles"] = new SelectList(_context.Roles, "ID", "RoleName", user.Status);
+
+
+
             return View(user);
         }
-
+        
         // GET: Admin/AdminUsers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -88,11 +120,9 @@ namespace APPMVC.Areas.Admin.Controllers
         }
 
         // POST: Admin/AdminUsers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,RoleID,UserName,FullName,Password,PhoneNumber,Image,Status")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,RoleID,UserName,FullName,Password,PhoneNumber,Image,Status")] User user, IFormFile? ImageFile)
         {
             if (id != user.ID)
             {
@@ -103,8 +133,18 @@ namespace APPMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    user.UserName = Utilities.ToTitleCase(user.UserName);
+                    if (ImageFile != null)
+                    {
+                        string extension = Path.GetExtension(ImageFile.FileName);
+                        string images = Utilities.SEOUrl(user.UserName) + extension;
+                        user.Image = await Utilities.UploadFile(ImageFile, @"User", images.ToLower());
+                    }
+                    if (string.IsNullOrEmpty(user.Image)) user.Image = "default.jpg";
+
                     _context.Update(user);
                     await _context.SaveChangesAsync();
+                    _NotyfService.Success("Cập nhật tài khoản thành công");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -114,6 +154,7 @@ namespace APPMVC.Areas.Admin.Controllers
                     }
                     else
                     {
+                        _NotyfService.Error("Có lỗi xảy ra");
                         throw;
                     }
                 }
@@ -156,14 +197,15 @@ namespace APPMVC.Areas.Admin.Controllers
             {
                 _context.Users.Remove(user);
             }
-            
+
             await _context.SaveChangesAsync();
+            _NotyfService.Success("Xóa tài khoản thành công");
             return RedirectToAction(nameof(Index));
         }
 
         private bool UserExists(int id)
         {
-          return (_context.Users?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.Users?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

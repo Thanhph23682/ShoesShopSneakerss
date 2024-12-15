@@ -21,17 +21,15 @@
                 </a>
                 
             </li>
-           
-             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="AdminBanHangTaiQuay" asp-action="Index">
                     <span class="icon-holder">
-                        <i class="anticon anticon-appstore"></i>
+                        <i class="anticon anticon-shop"></i> <!-- Đã thay đổi icon -->
                     </span>
-                    <span class="title">Bán hàng</span>
-                  
+                    <span class="title">Bán hàng tại quầy</span>
                 </a>
-             
             </li>
+           
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascript:void(0);">
                     <span class="icon-holder">
@@ -87,10 +85,10 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a asp-area="Admin" asp-controller="AdminCustomers" asp-action="Index">Quản lí nhân viên</a>
+                        <a asp-area="Admin" asp-controller="AdminCustomers" asp-action="Index">Quản lí khách hàng</a>
                     </li>
                     <li>
-                        <a asp-area="Admin" asp-controller="AdminUsers" asp-action="Index">Quản lí khách hàng</a>
+                        <a asp-area="Admin" asp-controller="AdminUsers" asp-action="Index">Quản lí nhân viên</a>
                     </li>
 
 
@@ -128,51 +126,32 @@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle">
                     <span class="icon-holder">
-                        <i class="anticon anticon-pie-chart"></i>
+                        <i class="anticon anticon-shopping-cart"></i> <!-- Thay đổi icon ở đây -->
                     </span>
-                    <span class="title">Quản lý tin tức</span>
+                    <span class="title">Quản lý hóa đơn</span>
                     <span class="arrow">
                         <i class="arrow-icon"></i>
                     </span>
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a asp-area="Admin" asp-controller="AdminNews" asp-action="Index">Danh sách tin tức</a>
+                        <a asp-area="Admin" asp-controller="AdminBill" asp-action="Index">Danh sách hóa đơn</a> <!-- Sửa chính tả: "hóa đơnc" -> "hóa đơn" -->
                     </li>
-
-
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle">
+
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="AdminPayments" asp-action="Index">
                     <span class="icon-holder">
-                        <i class="anticon anticon-file"></i>
+                        <i class="anticon anticon-credit-card"></i> <!-- Thay đổi icon ở đây -->
                     </span>
-                    <span class="title">Quản lý Pages</span>
-                    <span class="arrow">
-                        <i class="arrow-icon"></i>
-                    </span>
+                    <span class="title">Quản lý thanh toán</span>
                 </a>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <a asp-area="Admin" asp-controller="AdminPages" action="Index">Danh sách Pages</a>
-                    </li>
-
-                </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
-                    <span class="icon-holder">
-                        <i class="anticon anticon-lock"></i>
-                    </span>
-                    <span class="title">Quản lý Shipper</span>
-                    <span class="arrow">
-                        <i class="arrow-icon"></i>
-                    </span>
-                </a>
 
-            </li>
+
+            
+           
 
         </ul>
     </div>

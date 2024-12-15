@@ -1,90 +1,265 @@
 ﻿@model IEnumerable<APPDATA.Models.Customer>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh sách khách hàng";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="/js/datatables/datatables-simple-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FullName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BirthDay)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Role)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BirthDay)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Role.RoleName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <style>
+        /* CSS cho thanh tìm kiếm ngang */
+        .dataTables_filter {
+            display: flex;
+            justify-content: flex-end; /* Đặt thanh tìm kiếm ở bên phải */
+            padding-bottom: 10px;
+            align-items: center; /* Canh giữa các phần tử bên trong */
+        }
+
+            .dataTables_filter input {
+                display: inline-block;
+                width: 200px; /* Kích thước của ô tìm kiếm */
+                height: 32px;
+                padding: 5px 10px;
+                font-size: 14px;
+                margin-left: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+        .table td, .table th {
+            vertical-align: middle;
+        }
+
+        /* Đảm bảo khoảng cách giữa thanh tìm kiếm và length menu */
+       
+        .card-body {
+            margin-top: -15px;
+        }
+
+        /* Đảm bảo không có viền, nền cho icon */
+        .d-flex .btn {
+            background-color: transparent; /* Nền trong suốt */
+            border: none; /* Loại bỏ viền */
+        }
+
+            .d-flex .btn:hover {
+                background-color: transparent; /* Đảm bảo không có nền khi hover */
+            }
+
+        .toggle-password {
+            padding: 0;
+            border: none;
+            background: none;
+            color: #6c757d; /* Màu xám nhẹ */
+            cursor: pointer;
+        }
+
+            .toggle-password i {
+                font-size: 1.2rem; /* Kích thước icon */
+            }
+
+        /* CSS cho các biểu tượng hành động */
+        .btn-datatable.btn-icon.btn-transparent-dark {
+            background: none; /* Loại bỏ nền */
+            border: none; /* Loại bỏ viền */
+            box-shadow: none; /* Loại bỏ bóng */
+        }
+
+            .btn-datatable.btn-icon.btn-transparent-dark i {
+                color: #6c757d; /* Màu xám */
+                font-size: 1.2rem;
+            }
+
+            .btn-datatable.btn-icon.btn-transparent-dark:hover i {
+                color: #007bff; /* Màu xanh khi hover */
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid px-4">
+        <!-- Header -->
+        <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+            <div class="container-fluid px-4">
+                <div class="page-header-content">
+                    <div class="row align-items-center justify-content-between pt-3">
+                        <div class="col-auto mb-3 d-flex align-items-center">
+                            <div class="page-header-icon me-3">
+                                <i data-feather="user"></i> <!-- Biểu tượng "user" sẽ luôn hiển thị -->
+                            </div>
+                            <h4 class="page-header-title m-0">
+                                Danh sách khách hàng
+                            </h4>
+                        </div>
+
+                        <div class="col-12 col-xl-auto mb-3">
+                            <!-- Nút "Thêm khách hàng mới" -->
+                            <a asp-action="Create" class="btn btn-sm btn-primary">
+                                <i data-feather="user-plus"></i> Thêm khách hàng mới
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <table id="customerTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Vai trò</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Mật khẩu</th>
+                            @* <th>Ảnh đại diện</th> *@
+                            <th>Ngày sinh</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Role.RoleName</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Ảnh đại diện -->
+                                            <div class="avatar me-2">
+                                                <img class="avatar-img img-fluid" src="~/images/customer/@item.Image" alt="Image" width="50" height="50" />
+                                            </div>
+                                            <!-- Tên khách hàng -->
+                                            @item.FullName
+                                        </div>
+                                    </td>
+                                    <td>@item.Email</td>
+                                    <td>@item.PhoneNumber</td>
+                                    <td>@item.Address</td>
+                                    <td>
+                                        <span class="password-text" style="display: none;">@item.Password</span>
+                                        <span class="password-mask">********</span>
+                                        <button class="btn btn-sm btn-link toggle-password" type="button">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                    </td>
+                                   
+                                    <td>@item.BirthDay?.ToString("yyyy-MM-dd")</td> <!-- Thêm định dạng ngày sinh -->
+                                    <td>@item.CreateDate?.ToString("yyyy-MM-dd")</td> <!-- Thêm định dạng ngày tạo -->
+                                    <td>
+                                        @if (item.Status == 1)
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div class="badge badge-success badge-dot m-r-10"></div>
+                                                <div>Hoạt động</div>
+                                            </div>
+                                        }
+                                        else if (item.Status == 0)
+                                        {
+                                            <div class="d-flex align-items-center ">
+                                                <div class="badge badge-warning badge-dot m-r-10"></div>
+                                                <div>Không hoạt động</div>
+                                            </div>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-datatable btn-icon btn-transparent-dark me-2">
+                                                <i data-feather="edit"></i>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-datatable btn-icon btn-transparent-dark" onclick="return confirm('Bạn có chắc chắn muốn xóa?')">
+                                                <i data-feather="trash-2"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="10" class="text-center text-primary">Không có khách hàng nào trong hệ thống</td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <!-- DataTables and Feather Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script>
+    $(document).ready(function () {
+        // Bắt sự kiện khi nhấn vào nút con mắt
+        $('.toggle-password').click(function () {
+            const passwordText = $(this).siblings('.password-text');
+            const passwordMask = $(this).siblings('.password-mask');
+            const icon = $(this).find('i');
+
+            if (passwordText.is(':visible')) {
+                passwordText.hide();
+                passwordMask.show();
+                icon.removeClass('fa-eye-slash').addClass('fa-eye');
+            } else {
+                passwordText.show();
+                passwordMask.hide();
+                icon.removeClass('fa-eye').addClass('fa-eye-slash');
+            }
+        });
+
+        // Initialize DataTable
+        $('#customerTable').DataTable({
+            paging: true,  // Enable pagination
+            searching: true,  // Enable search
+            info: true,  // Show info (like "Showing 1 to 10 of 50 entries")
+            lengthMenu: [5, 10, 20],  // Options for number of entries per page
+            language: {
+                lengthMenu: "Hiển thị _MENU_ bản ghi mỗi trang",
+                zeroRecords: "Không tìm thấy kết quả",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ bản ghi",
+                infoEmpty: "Không có dữ liệu",
+                search: "Tìm kiếm:",
+                paginate: {
+                    first: "",
+                    last: "",
+                    next: "",
+                    previous: ""
+                }
+            },
+            drawCallback: function () {
+                feather.replace();  // Đảm bảo các icon feather được render lại
+            }
+        });
+    });
+</script>
+
+    }
+</body>
+</html>

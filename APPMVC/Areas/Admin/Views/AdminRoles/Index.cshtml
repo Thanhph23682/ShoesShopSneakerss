@@ -1,49 +1,97 @@
 ﻿@model IEnumerable<APPDATA.Models.Role>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh sách chức vụ";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="card">
-    <div class="card-body">
-<a class="btn btn-secondary m-r-5" asp-area="Admin" asp-controller="AdminRoles" asp-action="Create">Create</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" crossorigin="anonymous"></script>
 
-<div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Chức vụ</th>
-                <th scope="col">Mô tả</th>
-        </tr>
-            
-        </thead>
-        <tbody>
-            @if (Model != null)
-            {
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td scope="row">@item.ID</td>
-                        <td scope="row">@item.RoleName</td>
-                        <td scope="row">@item.Description</td>
-                        
-                <td>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="/js/datatables/datatables-simple-demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid px-4">
+        <!-- Header -->
+        <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+            <div class="container-fluid px-4">
+                <div class="page-header-content">
+                    <div class="row align-items-center justify-content-between pt-3">
+                        <div class="col-auto mb-3 d-flex align-items-center">
+                            <div class="page-header-icon me-3">
+                                <i data-feather="user"></i> 
+                            </div>
+                            <h4 class="page-header-title m-0">
+                                Danh sách chức vụ
+                            </h4>
+                        </div>
 
-                    <a asp-area="Admin" asp-controller="AdminRoles" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success m-r-5">Edit</a>
-                    <a asp-area="Admin" asp-controller="AdminRoles" asp-action="Details" asp-route-id="@item.ID" class="btn btn-info m-r-5">Details</a>
-                    <a asp-area="Admin" asp-controller="AdminRoles" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-warning m-r-5">Delete</a>
+                        <div class="col-12 col-xl-auto mb-3">
+                            <!-- Nút thêm chức vụ -->
+                            <a asp-action="Create" class="btn btn-sm btn-primary">
+                                <i data-feather="user-plus"></i> Thêm chức vụ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-                </td>
-                    </tr>
+        <!-- Bảng danh sách các chức vụ -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-header" style="background-color: #e9f5f9; border-bottom: 2px solid #b6e4f3; padding: 15px 0; text-align: center;">
+                <strong>Danh sách chức vụ</strong>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Tên chức vụ</th>
+                            <th>Mô tả</th>
+                            <th class="text-center">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                                <tr>
+                                    <td>@item.RoleName</td>
+                                    <td>@item.Description</td>
+                                    <td class="text-center">
+                                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-transparent-dark">
+                                            <i data-feather="edit"></i> Sửa
+                                        </a> 
+                                        <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-sm btn-transparent-dark">
+                                            <i data-feather="eye"></i> Chi tiết
+                                        </a> 
+                                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-transparent-dark" 
+                                           onclick="return confirm('Bạn có chắc chắn muốn xóa?')">
+                                            <i data-feather="trash-2"></i> Xóa
+                                        </a>
+                                    </td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-                }
-            }
-        </tbody>
-    </table>
-           
-</div>
-</div>
-</div>
-
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,11 +1,6 @@
 ﻿using APPDATA.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace APPDATA.Configurations
 {
@@ -13,9 +8,19 @@ namespace APPDATA.Configurations
     {
         public void Configure(EntityTypeBuilder<Payment> builder)
         {
+            // Đặt tên bảng cho thực thể Payment
             builder.ToTable("Payment");
+
+            // Xác định khóa chính cho bảng Payment
             builder.HasKey(p => p.PaymentID);
-            builder.HasOne(p => p.Order).WithMany(p => p.Payments).HasForeignKey(p => p.OrderID).HasConstraintName("Fk_Payment_Order");
+
+
+            // Thiết lập quan hệ một-một giữa Payment và Order
+            builder.HasOne(p => p.Order)
+                   .WithMany(p => p.Payments)
+                   .HasForeignKey(p => p.PaymentID)  // Khóa ngoại PaymentID
+                   .HasConstraintName("FK_Payment_Orders")
+                   .OnDelete(DeleteBehavior.Cascade);  // Xóa Payment khi Order bị xóa
         }
     }
 }
