@@ -21,7 +21,8 @@ namespace APPDATA.DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-VANLOI\\SQLEXPRESS;Initial Catalog = ShoeShopSneakers;Integrated Security=True;Trust Server Certificate=True");
+            
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-MRQT4GH;Initial Catalog=ShoesShopTest2;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -45,5 +46,7 @@ namespace APPDATA.DB
         public DbSet<VoucherDetail> VoucherDetails { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Bill> Bill { get; set; }
+        public DbSet<BillDetails> BillDetail { get; set; }
     }
 }

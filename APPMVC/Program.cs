@@ -1,7 +1,12 @@
 ﻿using APPDATA.DB;
 using AspNetCoreHero.ToastNotification;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using APPMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<APPMVCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("APPMVCContext") ?? throw new InvalidOperationException("Connection string 'APPMVCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -38,6 +43,7 @@ app.UseEndpoints(endpoints =>
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 });
+app.UseStaticFiles();  // Cấu hình để phục vụ các tệp tĩnh từ wwwroot
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
