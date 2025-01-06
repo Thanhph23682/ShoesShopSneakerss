@@ -65,6 +65,7 @@
                                 <button type="submit" class="btn btn-primary px-4">
                                     <i class="fas fa-search me-1"></i> Tìm kiếm
                                 </button>
+
                                 <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
                                     <i class="fas fa-sync-alt me-1"></i> Làm mới
                                 </a>
@@ -194,10 +195,11 @@
                                                class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Chi tiết">
                                                 <i class="fas fa-info-circle"></i>
                                             </a>
-                                            <a href="@Url.Action("PrintBill", "AdminBanHangTaiQuay", new { id = item.BillId })"
-                                               class="btn btn-info btn-sm" target="_blank" data-bs-toggle="tooltip" title="In hóa đơn">
-                                                <i class="fas fa-print"></i>
-                                            </a>
+                                                <a href="javascript:void(0);" onclick="showAlert('Tính năng xuất ra Word đang được phát triển!', 'info')"
+       class="btn btn-outline-info btn-sm" data-bs-toggle="tooltip" title="Xuất ra Word">
+        <i class="fas fa-file-word me-1"></i> Xuất Word
+    </a>
+
                                         </div>
                                     </td>
                                 </tr>

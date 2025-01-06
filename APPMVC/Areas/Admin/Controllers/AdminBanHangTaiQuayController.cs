@@ -128,22 +128,68 @@ namespace APPMVC.Areas.Admin.Controllers
             return Json(staff); // Trả về dữ liệu JSON
         }
 
+        //[HttpGet]
+        //public IActionResult GetProducts()
+        //{
+        //    var products = _context.Products
+        //        .Select(p => new
+        //        {
+        //            id = p.ProductID,
+        //            name = p.NameProduct,
+        //            price = p.Price,
+        //            image = "/images/products/" + p.ImagePath
+
+        //        })
+        //        .ToList();
+        //    return Json(products);
+        //}
+
         [HttpGet]
-        public IActionResult GetProducts()
+        public IActionResult GetTotalProducts()
+        {
+            return Json(_context.Products.Count());
+        }
+        [HttpGet]
+        public IActionResult GetProducts(int page = 1, int itemsPerPage = 8)
         {
             var products = _context.Products
+                .Skip((page - 1) * itemsPerPage) // Skip items for previous pages
+                .Take(itemsPerPage) // Take the required number of items for the current page
                 .Select(p => new
                 {
                     id = p.ProductID,
                     name = p.NameProduct,
                     price = p.Price,
                     image = "/images/products/" + p.ImagePath
-
                 })
                 .ToList();
+
             return Json(products);
         }
 
+
+
+        //[HttpGet]
+        //public IActionResult GetProducts()
+        //{
+        //    var products = _context.Products
+        //        .Include(p => p.ProductVariants)
+        //        .ThenInclude(pv => pv.Size)
+        //        .Select(p => new
+        //        {
+        //            id = p.ProductID,
+        //            name = p.NameProduct,
+        //            price = p.Price,
+        //            image = "/images/products/" + p.ImagePath,
+        //            sizes = p.ProductVariants.Select(pv => new
+        //            {
+        //                id = pv.Size.SizeID,
+        //                name = pv.Size.NameSize
+        //            }).ToList()
+        //        })
+        //        .ToList();
+        //    return Json(products);
+        //}
 
 
         [HttpPost]
@@ -212,10 +258,8 @@ namespace APPMVC.Areas.Admin.Controllers
                     UserId = model.UserId,
                     //CustomerId = customerId,
                     //CustomerId = model.CustomerId > 0 ? model.CustomerId : null,
-                    /* CustomerName = model.CustomerId == 0 ? model.CustomerName : null,*/ // Nếu là khách lẻ, lưu tên
-                    /*CustomerPhone = model.CustomerId == 0 ? model.CustomerPhone : null,*/ // Nếu là khách lẻ, lưu số điện thoại
-                    /*CustomerAddress = model.CustomerId == 0 ? model.CustomerAddress : null,*/ // Nếu là khách lẻ, lưu địa chỉ
-                                                                                                // CustomerId = model.CustomerId,  // Lưu Id của khách hàng
+
+                   /* CustomerId = model.CustomerId,*/  // Lưu Id của khách hàng
                     TotalAmount = model.BillDetails.Sum(x => x.Price * x.Quantity), // Tính tổng tiền từ chi tiết // Tổng tiền chính xác
                     PaidAmount = model.PaidAmount,   // Số tiền thanh toán chính xác
                     ChangeAmount = model.PaidAmount - model.TotalAmount,

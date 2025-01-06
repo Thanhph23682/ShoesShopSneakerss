@@ -310,7 +310,98 @@
 </body>
 </html>
 <style>
+    /* Size Selection Styles */
+.size-selection {
+    position: relative;
+}
 
+.size-select-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.size-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.size-select:hover {
+    border-color: #adb5bd;
+}
+
+.size-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    outline: none;
+}
+
+.selected-size {
+    display: inline-flex;
+    align-items: center;
+    background: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.selected-size .remove-size {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 0.75rem;
+}
+
+.selected-size .remove-size:hover {
+    color: #bb2d3b;
+}
+
+.size-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.size-badge.selected {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.size-toggle {
+    background: none;
+    border: none;
+    color: #0d6efd;
+    padding: 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.size-toggle:hover {
+    color: #0a58ca;
+}
+
+.size-list {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.size-list.show {
+    display: block;
+}
     /* Cải thiện giao diện số lượng */
     .quantity-control {
         display: flex;
@@ -506,37 +597,46 @@
             // Có thể sử dụng thư viện như SweetAlert2 hoặc Bootstrap Toast để hiển thị thông báo
             alert(message); // Dùng alert đơn giản nếu chưa tích hợp thư viện
         }
-        async function showAlert(text, icon) {
-            if (icon == 'warning') {
-                Swal.fire({
-                    title: 'Cảnh báo',
-                    text: text,
-                    icon: icon,
-                    showConfirmButton: true
-                }).then(function () {
-                    // Không có hành động thêm sau khi nhấn OK
-                });
-            } else if (icon == 'error') {
-                Swal.fire({
-                    title: 'Oops xảy ra lỗi...',
-                    text: text,
-                    icon: icon,
-                    showConfirmButton: true
-                }).then(function () {
-                    // Không có hành động thêm sau khi nhấn OK
-                });
-            } else if (icon == 'success') {
-                Swal.fire({
-                    title: 'Thành công',
-                    text: text,
-                    icon: icon,
-                    showConfirmButton: false,
-                    timer: 2000
-                }).then(function () {
-                    // Không có hành động thêm sau khi nhấn OK
-                });
+           async function showAlert(text, icon) {
+                if (icon == 'warning') {
+                    Swal.fire({
+                        title: 'Cảnh báo',
+                        text: text,
+                        icon: icon,
+                        showConfirmButton: true
+                    }).then(function () {
+                        // Không có hành động thêm sau khi nhấn OK
+                    });
+                } else if (icon == 'error') {
+                    Swal.fire({
+                        title: 'Oops xảy ra lỗi...',
+                        text: text,
+                        icon: icon,
+                        showConfirmButton: true
+                    }).then(function () {
+                        // Không có hành động thêm sau khi nhấn OK
+                    });
+                } else if (icon == 'success') {
+                    Swal.fire({
+                        title: 'Thành công',
+                        text: text,
+                        icon: icon,
+                        showConfirmButton: false,
+                        timer: 2000 // Thông báo sẽ tự động đóng sau 2 giây
+                    }).then(function () {
+                        // Không có hành động thêm sau khi nhấn OK
+                    });
+                } else if (icon == 'info') {
+                    Swal.fire({
+                        title: 'Thông tin',
+                        text: text,
+                        icon: icon,
+                        showConfirmButton: true
+                    }).then(function () {
+                        // Không có hành động thêm sau khi nhấn OK
+                    });
+                }
             }
-        }
 
         async function showConfirm(title, text, confirmText, cancelText) {
             return Swal.fire({
@@ -590,8 +690,11 @@
                             customerName.value = name;
                             customerPhone.value = phone;
                             customerAddress.value = address;
-
-                            $('#registeredCustomerModal').modal('hide');
+                                 // Hiển thị thông báo đã chọn thành công
+                            showAlert('Thông tin thành viên đã được lưu thành công!', 'success').then(() => {
+            // Đóng modal sau khi người dùng đã xem thông báo
+            $('#registeredCustomerModal').modal('hide');
+        });
                         });
                     });
                 })
@@ -695,124 +798,416 @@
             let cartItemId = 1;
             const itemsPerPage = 8; // Số sản phẩm trên mỗi trang
             let allProducts = [];
-
+            // loadProducts(1);
             // Load products
             // Sửa hàm loadProducts
             let currentPage = 1; // Thêm biến theo dõi trang hiện tại
 
-            function loadProducts(page = 1) {
-                currentPage = page; // Cập nhật trang hiện tại
-                $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (products) {
-                    allProducts = products;
+            // function loadProducts(page = 1) {
+            //     currentPage = page; // Cập nhật trang hiện tại
+            //     $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (products) {
+            //         allProducts = products;
 
-                    // Tính toán phân trang
-                    const totalPages = Math.ceil(products.length / itemsPerPage);
-                    const start = (page - 1) * itemsPerPage;
-                    const end = start + itemsPerPage;
-                    const paginatedProducts = products.slice(start, end);
+            //         // Tính toán phân trang
+            //         const totalPages = Math.ceil(products.length / itemsPerPage);
+            //         const start = (page - 1) * itemsPerPage;
+            //         const end = start + itemsPerPage;
+            //         const paginatedProducts = products.slice(start, end);
 
-                    displayProducts(paginatedProducts);
-                    updatePagination(totalPages, currentPage);
+            //         displayProducts(paginatedProducts);
+            //         updatePagination(totalPages, currentPage);
+            //     });
+            // }
+    //             function loadProducts(page = 1) {
+    //     currentPage = page;
+    //     $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (products) {
+    //         allProducts = products;
+    //         displayProducts(products.slice((page - 1) * itemsPerPage, page * itemsPerPage));
+    //         updatePagination(Math.ceil(products.length / itemsPerPage), page);
+    //     });
+    // }
+
+//     function loadProducts(page = 1) {
+//     currentPage = page; // Update the current page
+//     $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', { page: page, itemsPerPage: 8 }, function (products) {
+//         allProducts = products; // Store all the products globally (optional)
+
+//         // Hiển thị sản phẩm ngay khi load trang
+//         $('#products-tab').tab('show'); // Chuyển sang tab sản phẩm
+
+//         // Display the products for the current page
+//         displayProducts(products); // Assuming cart data is available
+
+//         // Update pagination (calculating total pages)
+//         $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (allProducts) {
+//             const totalPages = Math.ceil(allProducts.length / 8); // Total pages based on all products
+//             updatePagination(totalPages, page); // Update pagination buttons
+//         });
+//     });
+// }
+
+    let totalProducts = 0;
+
+    function loadProducts(page = 1) {
+        currentPage = page;
+
+        // Gọi API với tham số phân trang
+        $.ajax({
+            url: '/Admin/AdminBanHangTaiQuay/GetProducts',
+            data: {
+                page: page,
+                itemsPerPage: 8
+            },
+            success: function(response) {
+                // Hiển thị sản phẩm
+                displayProducts(response);
+
+                // Lấy tổng số sản phẩm để tính số trang
+                $.ajax({
+                    url: '/Admin/AdminBanHangTaiQuay/GetTotalProducts',
+                    success: function(total) {
+                        totalProducts = total;
+                        const totalPages = Math.ceil(totalProducts / 8);
+                        updatePagination(totalPages, page);
+                    }
                 });
+            },
+            error: function(error) {
+                console.error('Error loading products:', error);
             }
+        });
+    }
+
+//     function loadProducts(page = 1) {
+//     currentPage = page;
+
+//     // Gọi API GetProducts với tham số phân trang
+//     $.getJSON(`/Admin/AdminBanHangTaiQuay/GetProducts?page=${page}&itemsPerPage=${itemsPerPage}`, function (response) {
+//         // Hiển thị sản phẩm và cập nhật phân trang
+
+//         displayProducts(response.products);
+//         updatePagination(response.totalPages, response.currentPage);
+//     });
+// }
 
 
-            function displayProducts(products) {
-                const productGrid = $('#productGrid');
-                productGrid.empty();
+            // function displayProducts(products) {
+            //     const productGrid = $('#productGrid');
+            //     productGrid.empty();
 
-                products.forEach(product => {
-                    const productCard = `
-                            <div class="col-md-3 mb-4 product-item">
-                                <div class="card h-100 product-card shadow-sm">
-                                    <div class="card-img-container position-relative">
-                                        <img src="${product.image}"
-                                             class="card-img-top product-image"
-                                             alt="${product.name}">
+            //     products.forEach(product => {
+            //         const productCard = `
+            //                 <div class="col-md-3 mb-4 product-item">
+            //                     <div class="card h-100 product-card shadow-sm">
+            //                         <div class="card-img-container position-relative">
+            //                             <img src="${product.image}"
+            //                                  class="card-img-top product-image"
+            //                                  alt="${product.name}">
 
+            //                         </div>
+            //                         <div class="card-body d-flex flex-column">
+            //                             <h6 class="card-title text-truncate mb-2" title="${product.name}">
+            //                                 ${product.name}
+            //                             </h6>
+            //                             <div class="product-details mt-auto">
+            //                                 <p class="card-text mb-2 text-primary fw-bold">
+            //                                     ${formatCurrency(product.price)}
+            //                                 </p>
+            //                                 <button class="btn btn-primary btn-sm w-100 add-to-cart"
+            //                                         data-id="${product.id}"
+            //                                         data-name="${product.name}"
+            //                                         data-price="${product.price}"
+            //                                         ${product.stock <= 0 ? 'disabled' : ''}>
+            //                                     <i class="fas fa-cart-plus me-1"></i> Thêm vào giỏ
+            //                                 </button>
+            //                             </div>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+            //             `;
+            //         productGrid.append(productCard);
+            //     });
+            // }
+
+                    function displayProducts(products) {
+        const productGrid = $('#productGrid');
+        productGrid.empty();
+
+        products.forEach(product => {
+            const randomSizes = generateRandomSizes();
+            const sizeOptions = randomSizes.map(size => 
+                `<option value="${size}">${size}</option>`
+            ).join('');
+
+            const productCard = `
+                <div class="col-md-3 mb-4 product-item">
+                    <div class="card h-100 product-card shadow-sm">
+                        <div class="card-img-container position-relative">
+                            <img src="${product.image}"
+                                 class="card-img-top product-image"
+                                 alt="${product.name}">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title text-truncate mb-2" title="${product.name}">
+                                ${product.name}
+                            </h6>
+                            <div class="product-details mt-auto">
+                                <p class="card-text mb-2 text-primary fw-bold">
+                                    ${formatCurrency(product.price)}
+                                </p>
+                                <div class="size-selection">
+                                    <div class="size-select-container">
+                                        <select class="form-select form-select-sm size-select" 
+                                                data-product-id="${product.id}">
+                                            <option value="">Chọn size</option>
+                                            ${sizeOptions}
+                                        </select>
                                     </div>
-                                    <div class="card-body d-flex flex-column">
-                                        <h6 class="card-title text-truncate mb-2" title="${product.name}">
-                                            ${product.name}
-                                        </h6>
-                                        <div class="product-details mt-auto">
-                                            <p class="card-text mb-2 text-primary fw-bold">
-                                                ${formatCurrency(product.price)}
-                                            </p>
-                                            <button class="btn btn-primary btn-sm w-100 add-to-cart"
-                                                    data-id="${product.id}"
-                                                    data-name="${product.name}"
-                                                    data-price="${product.price}"
-                                                    ${product.stock <= 0 ? 'disabled' : ''}>
-                                                <i class="fas fa-cart-plus me-1"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
+                                    <div class="selected-sizes" id="selected-sizes-${product.id}"></div>
+                                    <button class="size-toggle" data-product-id="${product.id}">
+                                        Xem tất cả size
+                                    </button>
+                                    <div class="size-list" id="size-list-${product.id}">
+                                        ${randomSizes.map(size => `
+                                            <span class="size-badge" data-size="${size}">
+                                                Size ${size}
+                                            </span>
+                                        `).join('')}
                                     </div>
                                 </div>
+                                <button class="btn btn-primary btn-sm w-100 add-to-cart mt-2"
+                                        data-id="${product.id}"
+                                        data-name="${product.name}"
+                                        data-price="${product.price}"
+                                        disabled>
+                                    <i class="fas fa-cart-plus me-1"></i> Thêm vào giỏ
+                                </button>
                             </div>
-                        `;
-                    productGrid.append(productCard);
+                        </div>
+                    </div>
+                </div>
+            `;
+            productGrid.append(productCard);
+        });
+        
+
+        // Add event listeners
+        $('.size-toggle').click(function(e) {
+            e.preventDefault();
+            const productId = $(this).data('product-id');
+            const sizeList = $(`#size-list-${productId}`);
+            sizeList.toggleClass('show');
+            $(this).text(sizeList.hasClass('show') ? 'Ẩn size' : 'Xem tất cả size');
+        });
+
+        // $('.size-select').change(function() {
+        //     const productId = $(this).data('product-id');
+        //     const selectedSize = $(this).val();
+        //     const sizeName = $(this).find('option:selected').text();
+
+        //     if (selectedSize) {
+        //         const selectedSizesContainer = $(`#selected-sizes-${productId}`);
+        //         const sizeElement = `
+        //             <span class="selected-size">
+        //                 Size ${selectedSize}
+        //                 <span class="remove-size" data-size="${selectedSize}">×</span>
+        //             </span>
+        //         `;
+        //         selectedSizesContainer.append(sizeElement);
+        //         $(this).val('');
+
+        //         // Enable add to cart button
+        //         $(this).closest('.card-body').find('.add-to-cart').prop('disabled', false);
+        //     }
+        // });
+
+        $(document).on('change', '.size-select', function () {
+    const productId = $(this).data('product-id');
+    const selectedSize = $(this).val();
+    const sizeName = $(this).find('option:selected').text();
+
+    if (selectedSize) {
+        const selectedSizesContainer = $(`#selected-sizes-${productId}`);
+        const sizeElement = `
+            <span class="selected-size " data-size="${selectedSize}">
+                Size ${sizeName} <span class="remove-size" data-size="${selectedSize}">×</span>
+            </span>
+        `;
+
+        // Thêm size vào danh sách nếu chưa tồn tại
+        if (!$(`#selected-sizes-${productId} [data-size="${selectedSize}"]`).length) {
+            selectedSizesContainer.append(sizeElement);
+        }
+
+        $(this).val(''); // Reset dropdown
+        $(`[data-id="${productId}"].add-to-cart`).prop('disabled', false); // Kích hoạt nút thêm vào giỏ
+    }
+});
+
+
+        $(document).on('click', '.remove-size', function() {
+            const sizeContainer = $(this).closest('.selected-size');
+            const productCard = $(this).closest('.card-body');
+
+            sizeContainer.remove();
+
+            // If no sizes selected, disable add to cart button
+            if (productCard.find('.selected-size').length === 0) {
+                productCard.find('.add-to-cart').prop('disabled', true);
+            }
+        });
+    }
+
+    function generateRandomSizes() {
+        const sizes = ["35", "36", "37", "38", "39", "40", "41", "42", "43", "44"];
+        const randomCount = Math.floor(Math.random() * sizes.length) + 1;
+        return sizes.sort(() => 0.5 - Math.random()).slice(0, randomCount);
+    }
+            function addToCart(productId, productName, productPrice) {
+        // Lấy size đã chọn từ sản phẩm
+        const selectedSizes = $(`#selected-sizes-${productId} .selected-size`);
+
+        if (selectedSizes.length === 0) {
+            showAlert('Vui lòng chọn size trước khi thêm vào giỏ hàng', 'warning');
+            return;
+        }
+
+        // Thêm vào giỏ hàng cho mỗi size đã chọn
+        selectedSizes.each(function() {
+            const size = $(this).data('size');
+            const cartItemId = `${productId}-${size}`;
+            const existingItem = cart.find(item => item.cartItemId === cartItemId);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    cartItemId,
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    quantity: 1,
+                    size: size,
+                    sizeName: `Size ${size}`
                 });
             }
-            function updatePagination(totalPages, currentPage) {
-                const pagination = $('#productPagination');
-                pagination.empty();
+        });
 
-                // Nút Previous
+        updateCart();
+        showAlert('Thêm vào giỏ hàng thành công!', 'success');
+    }
+
+
+
+
+    function updateCart() {
+        const cartItems = $('#cartItems');
+        cartItems.empty();
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            const subtotal = item.price * item.quantity;
+            total += subtotal;
+
+            const row = `
+                <tr class="cart-item">
+                    <td>${index + 1}</td>
+                    <td>${item.name}<br><small class="text-muted">Size: ${item.sizeName}</small></td>
+                    <td>
+                        <div class="quantity-control">
+                            <button class="quantity-btn quantity-decrease" data-id="${item.cartItemId}">-</button>
+                            <span class="quantity-value">${item.quantity}</span>
+                            <button class="quantity-btn quantity-increase" data-id="${item.cartItemId}">+</button>
+                        </div>
+                    </td>
+                    <td>${formatCurrency(item.price)}</td>
+                    <td>${formatCurrency(subtotal)}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm btn-remove" data-id="${item.cartItemId}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `;
+            cartItems.append(row);
+        });
+
+        $('#cartTotal').text(formatCurrency(total));
+        $('#totalAmount').val(formatCurrency(total));
+    }
+
+
+
+
+
+
+        $(document).ready(function() {
+        loadProducts(1); // Load first page immediately
+
+        // Enable size selection
+        $(document).on('change', '.product-size', function() {
+            const addToCartBtn = $(this).closest('.card-body').find('.add-to-cart');
+            addToCartBtn.prop('disabled', !this.value);
+        });
+    });
+
+               // Cập nhật hàm updatePagination
+    function updatePagination(totalPages, currentPage) {
+        const pagination = $('#productPagination');
+        pagination.empty();
+
+        // Previous button
+        pagination.append(`
+            <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                <a class="page-link" href="#" data-page="${currentPage - 1}">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+        `);
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            if (
+                i === 1 || // First page
+                i === totalPages || // Last page
+                (i >= currentPage - 1 && i <= currentPage + 1) // Pages around current
+            ) {
                 pagination.append(`
-                        <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-                            <a class="page-link" href="#" data-page="${currentPage - 1}" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                    `);
-
-                // Hiển thị các số trang
-                let startPage = Math.max(1, currentPage - 2);
-                let endPage = Math.min(totalPages, startPage + 4);
-
-                if (endPage - startPage < 4) {
-                    startPage = Math.max(1, endPage - 4);
-                }
-
-                // Nút trang đầu nếu cần
-                if (startPage > 1) {
-                    pagination.append(`
-                            <li class="page-item">
-                                <a class="page-link" href="#" data-page="1">1</a>
-                            </li>
-                            ${startPage > 2 ? '<li class="page-item disabled"><span class="page-link">...</span></li>' : ''}
-                        `);
-                }
-
-                // Các số trang chính
-                for (let i = startPage; i <= endPage; i++) {
-                    pagination.append(`
-                            <li class="page-item ${currentPage === i ? 'active' : ''}">
-                                <a class="page-link" href="#" data-page="${i}">${i}</a>
-                            </li>
-                        `);
-                }
-
-                // Nút trang cuối nếu cần
-                if (endPage < totalPages) {
-                    pagination.append(`
-                            ${endPage < totalPages - 1 ? '<li class="page-item disabled"><span class="page-link">...</span></li>' : ''}
-                            <li class="page-item">
-                                <a class="page-link" href="#" data-page="${totalPages}">${totalPages}</a>
-                            </li>
-                        `);
-                }
-
-                // Nút Next
+                    <li class="page-item ${currentPage === i ? 'active' : ''}">
+                        <a class="page-link" href="#" data-page="${i}">${i}</a>
+                    </li>
+                `);
+            } else if (
+                i === currentPage - 2 ||
+                i === currentPage + 2
+            ) {
                 pagination.append(`
-                        <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-                            <a class="page-link" href="#" data-page="${currentPage + 1}" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    `);
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                `);
             }
+        }
+
+        // Next button
+        pagination.append(`
+            <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                <a class="page-link" href="#" data-page="${currentPage + 1}">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        `);
+    }
+
+    // Cập nhật event handler cho các nút phân trang
+    $(document).on('click', '.page-link', function(e) {
+        e.preventDefault();
+        const page = $(this).data('page');
+
+        if (!$(this).parent().hasClass('disabled') && page) {
+            loadProducts(page);
+        }
+    });
 
 
 
@@ -863,51 +1258,64 @@
             //     $('#changeAmount').val(formatCurrency(change));
             // }
 
-            $(document).ready(function () {
+            // $(document).ready(function () {
 
-                $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (products) {
-                    var productGrid = $('#productGrid');
-                    productGrid.empty(); // Clear previous content
-                    let cartItemId = 1;
-                    // Loop through the products and display them
-                    products.forEach(function (product) {
-                        var productItem = `
-                <div class="col-md-3 mb-3 product-item">
-                    <div class="card h-100 text-center">
-                        <div class="card-img-container">
-                            <img src="${product.image}" class="card-img-top product-image" alt="${product.name}">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title text-truncate" title="${product.name}">${product.name}</h6>
-                            <p class="card-text">
-                                Giá: ${product.price.toLocaleString()} đ
-                            </p>
-                                    <button class="btn btn-primary btn-sm add-to-cart"
-                        data-id="${product.id}"
-                        data-name="${product.name}"
-                        data-price="${product.price}">
-                    <i class="fas fa-cart-plus me-1"></i> Thêm vào giỏ
-                </button>
+            //     $.getJSON('/Admin/AdminBanHangTaiQuay/GetProducts', function (products) {
+            //         var productGrid = $('#productGrid');
+            //         productGrid.empty(); // Clear previous content
+            //         let cartItemId = 1;
+            //         // Loop through the products and display them
+            //         products.forEach(function (product) {
+            //             var productItem = `
+            //     <div class="col-md-3 mb-3 product-item">
+            //         <div class="card h-100 text-center">
+            //             <div class="card-img-container">
+            //                 <img src="${product.image}" class="card-img-top product-image" alt="${product.name}">
+            //             </div>
+            //             <div class="card-body">
+            //                 <h6 class="card-title text-truncate" title="${product.name}">${product.name}</h6>
+            //                 <p class="card-text">
+            //                     Giá: ${product.price.toLocaleString()} đ
+            //                 </p>
+            //                         <button class="btn btn-primary btn-sm add-to-cart"
+            //             data-id="${product.id}"
+            //             data-name="${product.name}"
+            //             data-price="${product.price}">
+            //         <i class="fas fa-cart-plus me-1"></i> Thêm vào giỏ
+            //     </button>
 
-                        </div>
-                    </div>
-                </div>
-                `;
-                        productGrid.append(productItem);
+            //             </div>
+            //         </div>
+            //     </div>
+            //     `;
+            //             productGrid.append(productItem);
 
-                    });
+            //         });
+                $(document).ready(function () {
+        // Gọi hàm loadProducts để tải trang đầu tiên khi mở giao diện
+        loadProducts(1);
 
-                    // Event listener to add items to cart
-                    // Bằng đoạn code mới sử dụng event delegation
-                    $(document).on('click', '.add-to-cart', function () {
-                        const productId = $(this).data('id');
-                        const productName = $(this).data('name');
-                        const productPrice = $(this).data('price');
+        // Event listener cho nút "Thêm vào giỏ hàng"
+        $(document).on('click', '.add-to-cart', function () {
+            const productId = $(this).data('id');
+            const productName = $(this).data('name');
+            const productPrice = $(this).data('price');
 
-                        addToCart(productId, productName, productPrice);
-                    });
-                });
-            });
+            // Gọi hàm thêm vào giỏ hàng
+            addToCart(productId, productName, productPrice);
+        });
+    });
+            //         // Event listener to add items to cart
+            //         // Bằng đoạn code mới sử dụng event delegation
+            //         $(document).on('click', '.add-to-cart', function () {
+            //             const productId = $(this).data('id');
+            //             const productName = $(this).data('name');
+            //             const productPrice = $(this).data('price');
+
+            //             addToCart(productId, productName, productPrice);
+            //         });
+            //     });
+            // });
             $(document).on('click', '.page-link', function (e) {
                 e.preventDefault();
                 const newPage = $(this).data('page');
@@ -930,13 +1338,41 @@
                         name: productName,
                         price: productPrice,
                         quantity: 1
+
                     });
                 }
-
+                 // Hiển thị thông báo
+    showAlert('Thêm vào giỏ hàng thành công!', 'success');
                 // Chuyển tab về giỏ hàng và cập nhật
                 $('#salesTab a[href="#cart"]').tab('show');
+                    renderCart(); // Hàm hiển thị lại giỏ hàng
                 updateCart();
             }
+                function renderCart() {
+        const cartContainer = $('#cartContainer');
+        cartContainer.empty();
+
+        cart.forEach(item => {
+            const productRow = `
+                <div class="cart-item" data-cart-id="${item.cartItemId}">
+                    <h6>${item.name} - Size ${item.sizeName}</h6>
+                    <p>Giá: ${formatCurrency(item.price)}</p>
+                    <p>Số lượng: ${item.quantity}</p>
+                    <button class="btn btn-danger btn-sm remove-cart-item" data-cart-id="${item.cartItemId}">
+                        Xóa
+                    </button>
+                </div>
+            `;
+            cartContainer.append(productRow);
+        });
+
+        // Thêm sự kiện xóa sản phẩm
+        $('.remove-cart-item').click(function() {
+            const cartItemId = $(this).data('cart-id');
+            cart = cart.filter(item => item.cartItemId !== cartItemId);
+            renderCart();
+        });
+    }
 
 
             // Cập nhật hàm updateCart
@@ -1295,7 +1731,7 @@
                 document.getElementById("totalAmount").value = "0";
                 document.getElementById("paidAmount").value = "0";
                 document.getElementById("paymentMethod").value = "";
-
+                    document.getElementById("changeAmount").value = "";
                 // Xóa hiển thị giỏ hàng trên giao diện
                 const cartItems = document.getElementById("cartItems");
                 if (cartItems) {
@@ -1378,10 +1814,10 @@
                 cart = []; // Nếu bạn có một biến `cart` chứa giỏ hàng, reset giỏ hàng này
 
                 // Nếu bạn muốn cập nhật lại giao diện giỏ hàng hoặc số lượng sản phẩm, có thể gọi lại các hàm render lại giao diện
-                renderCart(); // Giả sử bạn có một hàm renderCart() để cập nhật giỏ hàng trên giao diện
+                updateCart(); // Giả sử bạn có một hàm renderCart() để cập nhật giỏ hàng trên giao diện
 
                 // Thông báo người dùng đã hủy
-                alert("Đã hủy giao dịch. Tất cả dữ liệu đã được xóa.");
+                    showAlert("Đã hủy giao dịch. Tất cả dữ liệu đã được xóa.", "info");
             });
             // Lắng nghe sự kiện 'input' từ thanh tìm kiếm
             document.querySelector('.search-input').addEventListener('input', function () {
@@ -1400,25 +1836,25 @@
                 });
             });
             // Thêm xử lý tìm kiếm với debounce
-            let searchTimeout;
-            $('.search-input').on('input', function () {
-                clearTimeout(searchTimeout);
-                const searchTerm = this.value.toLowerCase().trim();
+            // let searchTimeout;
+            // $('.search-input').on('input', function () {
+            //     clearTimeout(searchTimeout);
+            //     const searchTerm = this.value.toLowerCase().trim();
 
-                searchTimeout = setTimeout(() => {
-                    if (searchTerm === '') {
-                        loadProducts(currentPage);
-                        return;
-                    }
+            //     searchTimeout = setTimeout(() => {
+            //         if (searchTerm === '') {
+            //             loadProducts(currentPage);
+            //             return;
+            //         }
 
-                    const filteredProducts = allProducts.filter(product =>
-                        product.name.toLowerCase().includes(searchTerm)
-                    );
+            //         const filteredProducts = allProducts.filter(product =>
+            //             product.name.toLowerCase().includes(searchTerm)
+            //         );
 
-                    displayProducts(filteredProducts);
-                    $('#productPagination').toggle(searchTerm === '');
-                }, 300);
-            });
+            //         displayProducts(filteredProducts);
+            //         $('#productPagination').toggle(searchTerm === '');
+            //     }, 300);
+            // });
 
 
             // Initialize
