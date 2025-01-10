@@ -241,15 +241,23 @@ namespace APPMVC.Areas.Admin.Controllers
                 //    }
                 //}
 
-                //int? customerId = model.CustomerId == 0 ? null : model.CustomerId;
-                //if (customerId != null)
+                
+                //int? customerId = null;
+                //var customerType = model.CustomerType; // Thêm trường này vào model
+
+                //if (customerType == "registered")
                 //{
+                //    // Nếu là khách hàng thành viên, lấy ID từ model
+                //    customerId = model.CustomerId;
+
+                //    // Kiểm tra xem khách hàng có tồn tại không
                 //    var customerExists = await _context.Customers.AnyAsync(c => c.Id == customerId);
                 //    if (!customerExists)
                 //    {
                 //        return Json(new { success = false, message = "Khách hàng không tồn tại." });
                 //    }
                 //}
+
 
                 var bill = new Bill
                 {
@@ -259,7 +267,7 @@ namespace APPMVC.Areas.Admin.Controllers
                     //CustomerId = customerId,
                     //CustomerId = model.CustomerId > 0 ? model.CustomerId : null,
 
-                   /* CustomerId = model.CustomerId,*/  // Lưu Id của khách hàng
+                    /* CustomerId = model.CustomerId,*/  // Lưu Id của khách hàng
                     TotalAmount = model.BillDetails.Sum(x => x.Price * x.Quantity), // Tính tổng tiền từ chi tiết // Tổng tiền chính xác
                     PaidAmount = model.PaidAmount,   // Số tiền thanh toán chính xác
                     ChangeAmount = model.PaidAmount - model.TotalAmount,
@@ -267,6 +275,7 @@ namespace APPMVC.Areas.Admin.Controllers
                     Status = 1,
                     Items = model.BillDetails.Count
                 };
+            
 
                 _context.Bill.Add(bill);
                 await _context.SaveChangesAsync();
@@ -293,12 +302,15 @@ namespace APPMVC.Areas.Admin.Controllers
 
                 return Json(new { success = true, billId = bill.Id });
             }
+
             catch (Exception ex)
             {
                 await transaction.RollbackAsync();
                 return Json(new { success = false, message = ex.Message });
             }
         }
+    
+
 
 
 
@@ -405,6 +417,24 @@ namespace APPMVC.Areas.Admin.Controllers
                 // Chữ ký
                 document.Add(new Paragraph("\n\n"));
                 document.Add(new Paragraph("Ký tên (Người bán hàng): ____________________", normalFont));
+
+                // Thêm văn bản đổi trả sản phẩm
+                var returnPolicyText = new Paragraph("**Chính sách đổi trả sản phẩm**", boldFont);
+                returnPolicyText.Alignment = Element.ALIGN_CENTER;
+                returnPolicyText.SpacingBefore = 10; // Khoảng cách trước đoạn văn bản
+                document.Add(returnPolicyText);
+
+                var returnPolicyDetails = new Paragraph(
+                    "1. Quý khách có thể đổi trả sản phẩm trong vòng 7 ngày kể từ ngày mua hàng.\n" +
+                    "2. Sản phẩm chỉ được đổi trả khi còn nguyên tem, hộp và chưa qua sử dụng.\n" +
+                    "3. Vui lòng mang hóa đơn và sản phẩm đến cửa hàng để được hỗ trợ.\n" +
+                    "4. Một số sản phẩm nằm ngoài phạm vi đổi trả theo chính sách, vui lòng tham khảo tại quầy.",
+                    normalFont
+                );
+                returnPolicyDetails.SpacingBefore = 5; // Khoảng cách trước đoạn văn bản chi tiết
+                returnPolicyDetails.SpacingAfter = 10; // Khoảng cách sau đoạn văn bản chi tiết
+                document.Add(returnPolicyDetails);
+
 
                 var thankYouText = new Paragraph("CẢM ƠN QUÝ KHÁCH VÀ HẸN GẶP LẠI", boldFont);
                 thankYouText.Alignment = Element.ALIGN_CENTER;
