@@ -310,6 +310,26 @@
 </body>
 </html>
 <style>
+    /* Thêm hiệu ứng hover cho sản phẩm */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Di chuyển lên một chút khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng khi hover */
+}
+
+
+
+
+
+/* Thêm hiệu ứng khi hover vào hình ảnh sản phẩm */
+.product-card:hover .product-image {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+    transition: transform 0.3s ease;
+}
+
     /* Size Selection Styles */
 .size-selection {
     position: relative;
