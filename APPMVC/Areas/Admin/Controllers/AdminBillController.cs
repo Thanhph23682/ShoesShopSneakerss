@@ -61,6 +61,7 @@ namespace APPMVC.Areas.Admin.Controllers
                 );
             }
 
+
             // Sắp xếp và phân trang
             query = query.OrderByDescending(b => b.CreateDate);
 
@@ -79,6 +80,8 @@ namespace APPMVC.Areas.Admin.Controllers
 
             return View(models);
         }
+
+
 
 
 
@@ -113,6 +116,32 @@ namespace APPMVC.Areas.Admin.Controllers
 
             return View(bill);
         }
+
+        [HttpPost]
+        public IActionResult ReturnProduct(int billId, int productId, int quantity)
+        {
+            var billDetail = _context.BillDetail.FirstOrDefault(bd => bd.BillId == billId && bd.ProductId == productId);
+            if (billDetail == null || quantity <= 0 || quantity > billDetail.Quantity)
+            {
+                return Json(new { success = false, message = "Số lượng đổi trả không hợp lệ!" });
+            }
+
+            
+            billDetail.Quantity -= quantity;
+            if (billDetail.Quantity == 0)
+            {
+                _context.BillDetail.Remove(billDetail);
+            }
+
+            // Lưu lịch sử đổi trả (tuỳ ý)
+            _context.SaveChanges();
+
+            return Json(new { success = true });
+        }
+
+        
+
+
 
 
 
