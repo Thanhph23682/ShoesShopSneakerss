@@ -2,11 +2,11 @@
 using AspNetCoreHero.ToastNotification;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using APPMVC.Data;
+//using APPMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<APPMVCContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("APPMVCContext") ?? throw new InvalidOperationException("Connection string 'APPMVCContext' not found.")));
+//builder.Services.AddDbContext<APPMVCContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("APPMVCContext") ?? throw new InvalidOperationException("Connection string 'APPMVCContext' not found.")));
 
 builder.Services.AddSession(options =>
 {
