@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {}
+    "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {}
   },
   "projects": {
-    "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj": {
+    "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj",
+        "projectUniqueName": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj",
         "projectName": "APPDATA",
-        "projectPath": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPDATA\\obj\\",
+        "projectPath": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj",
+        "packagesPath": "C:\\Users\\FPT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FPT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -51,33 +50,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "BCrypt.Net-Next": {
-              "target": "Package",
-              "version": "[4.0.3, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[6.0.35, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[6.0.35, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[6.0.35, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.20, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[6.0.35, )"
             }
           },
           "imports": [
@@ -91,37 +82,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.35, 6.0.35]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.35, 6.0.35]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.35, 6.0.35]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {
+    "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
+        "projectUniqueName": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
         "projectName": "APPMVC",
-        "projectPath": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Máy tính\\DATN_6\\ShoesShopSneakerss\\APPMVC\\obj\\",
+        "projectPath": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPMVC\\APPMVC.csproj",
+        "packagesPath": "C:\\Users\\FPT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -142,8 +119,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\FPT\\Downloads\\Datn_Mới 1\\Datn_Mới 1\\APPDATA\\APPDATA.csproj": {
-                "projectPath": "C:\\Users\\FPT\\Downloads\\Datn_Mới 1\\Datn_Mới 1\\APPDATA\\APPDATA.csproj"
+              "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj": {
+                "projectPath": "C:\\Users\\FPT\\Desktop\\12012025\\ShoesShopSneakerss\\APPDATA\\APPDATA.csproj"
               }
             }
           }
@@ -204,9 +181,9 @@
               "target": "Package",
               "version": "[7.0.12, )"
             },
-            "PagedList.Core": {
+            "PagedList.Core.Mvc": {
               "target": "Package",
-              "version": "[1.17.4, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -228,7 +205,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

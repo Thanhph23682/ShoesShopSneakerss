@@ -4,3 +4,18 @@ C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyI
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
 C:\Máy tính\DATN\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\bin\Debug\net6.0\APPDATA.deps.json
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\bin\Debug\net6.0\APPDATA.runtimeconfig.json
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\bin\Debug\net6.0\APPDATA.dll
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\bin\Debug\net6.0\APPDATA.pdb
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.AssemblyReference.cache
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfoInputs.cache
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.AssemblyInfo.cs
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.csproj.CoreCompileInputs.cache
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.sourcelink.json
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.dll
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\refint\APPDATA.dll
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.pdb
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\APPDATA.genruntimeconfig.cache
+C:\Users\FPT\Desktop\12012025\ShoesShopSneakerss\APPDATA\obj\Debug\net6.0\ref\APPDATA.dll
