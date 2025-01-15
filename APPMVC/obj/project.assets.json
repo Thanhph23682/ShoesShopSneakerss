@@ -4360,8 +4360,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.35",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.35"
+          "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20"
         },
         "compile": {
           "bin/placeholder/APPDATA.dll": {}

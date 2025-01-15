@@ -12,13 +12,13 @@ namespace APPDATA.Models
         [Key]
 
         public int ID { get; set; }
-        public int CustomerID { get; set; }
+        public int? CustomerID { get; set; }
         public int UserID { get; set; }
         public DateTime CreatDate { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string? Description { get; set; }
-        public decimal Amount { get; set; }
+        public int Amount { get; set; }
         public string? Conditions { get; set; }
         public string? PercentDiscount { get; set; }
         public int Status { get; set; }

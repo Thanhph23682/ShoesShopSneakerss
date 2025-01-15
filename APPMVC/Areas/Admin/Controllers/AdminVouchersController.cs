@@ -24,6 +24,7 @@ namespace APPMVC.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var shopDbContext = _context.Vouchers.Include(v => v.Customer);
+            ViewData["Voucher"] = shopDbContext;
             return View(await shopDbContext.ToListAsync());
         }
 

@@ -31,6 +31,7 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="ModelsViews\" />
+    <Folder Include="wwwroot\assetsThanh\js\" />
     <Folder Include="wwwroot\assets\img\payment\" />
   </ItemGroup>
 

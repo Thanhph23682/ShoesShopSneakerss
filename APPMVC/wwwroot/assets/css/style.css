@@ -4021,3 +4021,16 @@ blockquote {
     width: 100%;
     margin-right: 0;
     margin-bottom: 15px; } }
+
+
+/* Hiệu ứng hover */
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+/* Vùng chi tiết */
+#details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

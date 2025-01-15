@@ -1,90 +1,626 @@
 ﻿@model IEnumerable<APPDATA.Models.Voucher>
+@using APPDATA.Models;
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+	ViewData["Title"] = "Index";
+	// Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+	var voucher = (ViewData["Voucher"] as IEnumerable<APPDATA.Models.Voucher>);
 }
 
-<h1>Index</h1>
+<script src="~/AdminAssets/js/vendors.min.js"></script>
+<script src="~/js/scripts.js"></script>
+<script src="~/assets/js/main.js"></script>
+<script src="~/js/main.js"></script>
+<h1>Quản lý Voucher</h1>
+<section class="section dashboard">
+	<div class="row">
+		<!-- Left side columns -->
+		<div class="col-lg-8">
+			<div class="row">
+				<!-- Recent Sales -->
+				<div class="col-12">
+					<div class="card recent-sales overflow-auto">
+						<div id="tableInfo" class="card-body">
+							<table id="tableBody" class="table table-hover datatable">
+								<thead>
+									<
+									<tr>
+										<th>ID khách hàng</th>
+										<th>Ngày Khởi Tạo</th>
+										<th>Ngày Bắt Đầu</th>
+										<th>Ngày Kết Thúc</th>
+										<th>Mô Tả</th>
+										<th>Số Lượng</th>
+										<th>Điều kiện cần</th>
+										<th>Phần trăm giảm</th>
+										<th>Trạng Thái</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									@foreach (var item in @Model)
+									{
+										<tr>
+											<td>@item.CustomerID</td>
+											<td>@item.CreatDate</td>
+											<td>@item.StartDate</td>
+											<td>@item.EndDate</td>
+											<td>@item.Description</td>
+											<td>@item.Amount</td>
+											<td>@item.Conditions</td>
+											<td>@item.PercentDiscount</td>
+											<td>
+												@if (item.Status == 0)
+												{
+													<span>Hoạt Động</span>
+												}
+												else
+												{
+													<span>Hết Hạn</span>
+												}
+											</td>
+											<td>
+												<a class="btn btn-success" onclick="showNotification('@item.ID')" title="Chi tiết" style="margin-right: 10px;">
+													<i class="bx bxs-trash-alt"></i>
+												</a>
+												<a class="btn btn-danger" onclick="deleteForm('@item.ID')" title="Xóa">
+													<i class="bx bxs-trash-alt"></i>
+												</a>
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!-- End Recent Sales -->
+			</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StartDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EndDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Amount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Conditions)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PercentDiscount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Customer)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Amount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Conditions)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PercentDiscount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+		</div><!-- End Left side columns -->
+		<!-- Right side columns -->
+		<div class="col-lg-4">
+
+			<!-- Recent Activity -->
+			<div class="card">
+
+				<div class="card-body">
+					<h5 class="card-title">Quản lý <span>| xx</span></h5>
+					<!-- Default Tabs -->
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="contact-tab" data-bs-toggle="tab"
+									data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+									aria-selected="false">
+								Chi tiết
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link " id="home-tab" data-bs-toggle="tab"
+									data-bs-target="#home" type="button" role="tab" aria-controls="home"
+									aria-selected="true">
+								Cập nhật
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+									data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+									aria-selected="false">
+								Tạo mới
+							</button>
+						</li>
+					</ul>
+					@* Update *@
+					<div class="tab-content pt-2" id="myTabContent">
+						<div class="tab-pane fade" id="home" role="tabpanel"
+							 aria-labelledby="home-tab">
+							@if (voucher != null)
+							{
+								<form id="updateProfileForm">
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Ngày Khởi Tạo</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().CreatDate" id="UpdateNgayTao" type="datetime-local" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Ngày Bắt Đầu</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().StartDate" id="UpdateNgayBD" type="datetime-local" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Ngày Kết Thúc</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().EndDate" id="UpdateNgayKT" type="datetime-local" class="form-control" max="100" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Mô Tả</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().Description" id="UpdateMoTa" type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Số Lượng</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().Amount" id="UpdateGia" type="number" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Điều kiện cần</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().Conditions" id="UpdateDieuKien" type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Phần trăm giảm</label>
+										<div class="col-sm-8">
+											<input asp-for="@voucher.FirstOrDefault().PercentDiscount" id="UpdatePhanTram" type="number" class="form-control" />
+										</div>
+									</div>
+									<div class="mb-3 row">
+										<label class="col-sm-4 col-form-label">Trạng Thái</label>
+										<div class="col-sm-8">
+
+											<select asp-for="@voucher.FirstOrDefault().Status" id="UpdateTrangThai" class="form-select" aria-label="Default select example">
+												@if (voucher.FirstOrDefault().Status == 0)
+												{
+													<option value="0" selected>Đang Hoạt Động</option>
+													<option value="1">Đã Hết Hạn</option>
+												}
+												else
+												{
+													<option value="0">Đang Hoạt Động</option>
+													<option value="1" selected>Đã Hết Hạn</option>
+												}
+											</select>
+										</div>
+									</div>
+
+									<button type="submit" class="btn btn-warning" onclick="updateForm()">Lưu</button>
+								</form>
+							}
+						</div>
+
+						@* Create *@
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<form asp-action="Create" method="post">
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Ngày Khởi Tạo</label>
+									<div class="col-sm-8">
+										<input id="CreateDate" name="CreateDate" type="datetime-local" class="form-control" value="Day" data-val="true" data-val-required="The CreatDate field is required." />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Ngày Bắt Đầu</label>
+									<div class="col-sm-8">
+										<input id="StartDate" name="StartDate" type="datetime-local" class="form-control" />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Ngày Kết Thúc</label>
+									<div class="col-sm-8">
+										<input id="EndDate" name="EndDate" type="datetime-local" class="form-control" max="100" />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Mô Tả</label>
+									<div class="col-sm-8">
+										<input id="Description" name="Description" type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Số Lượng</label>
+									<div class="col-sm-8">
+										<input id="Amount" name="Amount" type="number" class="form-control" />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Điều kiện cần</label>
+									<div class="col-sm-8">
+										<input id="Conditions" name="Conditions" type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="mb-3 row">
+									<label class="col-sm-4 col-form-label">Phần trăm giảm</label>
+									<div class="col-sm-8">
+										<input id="PercentDiscount" name="PercentDiscount" type="number" class="form-control" />
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-success" onclick="saveForm()">Thêm</button>
+							</form>
+
+							<!-- End Multi Columns Form -->
+
+						</div>
+
+
+						@* Detail *@
+						<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+							@if (voucher != null)
+							{
+								<div class="row">
+									<label class="col-sm-4 col-form-label">
+										<p class="mb-3 row">Ngày Khởi Tạo</p>
+										<p class="mb-3 row">Ngày Bắt Đầu</p>
+										<p class="mb-3 row">Ngày Kết Thúc</p>
+										<p class="mb-3 row">Mô Tả</p>
+										<p class="mb-3 row">Số Lượng</p>
+										<p class="mb-3 row">Điều kiện cần</p>
+										<p class="mb-3 row">Phần trăm giảm</p>
+										<span class="mb-3 row">Trạng thái</span>
+									</label>
+									<label class="col-sm-8 col-form-label">
+										@foreach (var item in voucher)
+										{
+											<p>@item.CreatDate</p>
+											<p>@item.StartDate</p>
+											<p>@item.EndDate</p>
+											<p>@item.Description</p>
+											<p>@item.Amount</p>
+											<p>@item.Conditions</p>
+											<p>@item.PercentDiscount</p>
+											@if (item.Status == 0)
+											{
+												<span>Đang Hoạt Động</span>
+											}
+											else
+											{
+												<span>Đã Hết Hạn</span>
+											}
+										}
+									</label>
+								</div>
+							}
+						</div>
+					</div><!-- End Default Tabs -->
+
+				</div>
+
+			</div>
+		</div><!-- End Recent Activity -->
+
+	</div><!-- End Right side columns -->
+
+</section>
+
+<script>
+
+	// Function hiển thị thông báo
+	function showNotification(message, type) {
+		toastr.options = {
+			"closeButton": true,
+			"debug": false,
+			"newestOnTop": true,
+			"progressBar": true,
+			"positionClass": "toast-top-right", // Sửa từ "toast-top-right" thành "toast-bottom-right"
+			"preventDuplicates": true,
+			"onclick": null,
+			"showDuration": "300",
+			"hideDuration": "1000",
+			"timeOut": "5000",
+			"extendedTimeOut": "1000",
+			"showEasing": "swing",
+			"hideEasing": "linear",
+			"showMethod": "fadeIn",
+			"hideMethod": "fadeOut"
+		};
+
+		// Hiển thị thông báo theo loại
+		if (type === "success") {
+			toastr.success(message);
+		} else {
+			toastr.error(message);
+		}
+	}
+
+	function saveForm(event) {
+		// Ngăn chặn hành động mặc định của nút submit
+		event.preventDefault();
+
+		// Lấy ra các giá trị từ các trường trong form
+		var parentElement = document.getElementById('createProfileForm');
+		var createDate = parentElement.querySelector('#CreateDate').value;
+		var startDate = parentElement.querySelector('#StartDate').value;
+		var endDate = parentElement.querySelector('#EndDate').value;
+		var description = parentElement.querySelector('#Description').value;
+		var amount = parentElement.querySelector('#Amount').value;
+		var conditions = parentElement.querySelector('#Conditions').value;
+		var percentDiscount = parentElement.querySelector('#PercentDiscount').value;
+
+		// Kiểm tra xem các trường có bị bỏ trống không
+		if (!createDate || !startDate || !endDate || !description || !amount || !conditions || !percentDiscount) {
+			// Hiển thị thông báo lỗi nếu có trường nào bị bỏ trống
+			showNotification("Vui lòng điền đầy đủ thông tin vào các trường", "warning");
+			return; // Ngăn không cho tiếp tục thực hiện lưu form
+		}
+
+		// Kiểm tra ngày hết hạn phải sau ngày bắt đầu
+		if (new Date(endDate) <= new Date(startDate)) {
+			showNotification("Ngày hết hạn phải sau ngày bắt đầu", "warning");
+			return;
+		}
+
+		// Nếu các trường đều được điền đầy đủ, tiếp tục xác nhận thêm bản ghi
+		var formData = new FormData(document.getElementById('createProfileForm'));
+
+		Swal.fire({
+			title: 'Xác nhận',
+			text: 'Bạn có chắc chắn muốn thêm bản ghi này ?',
+			icon: 'question',
+			showCancelButton: true,
+			confirmButtonText: 'Có',
+			cancelButtonText: 'Không'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				performRequest(formData);
+			} else {
+				// Người dùng huỷ bỏ, không làm gì cả
+				// Swal.fire('Cancelled', 'Your action has been cancelled', 'info');
+			}
+		});
+	}
+
+	function performRequest(formData) {
+		$.ajax({
+			url: '/Admin/AdminVouchers/Create',
+			type: 'POST',
+			data: formData,
+			contentType: false,
+			processData: false,
+			success: function (results) {
+				// Hiển thị thông báo thành công
+				showNotification("Thêm bản ghi thành công", "success");
+				updateTable();
+				document.getElementById('createProfileForm').reset();
+			},
+			error: function () {
+				// Hiển thị thông báo lỗi
+				showNotification("Đã xảy ra lỗi khi thêm bản ghi", "error");
+			}
+		});
+	}
+
+	// Lắng nghe sự kiện submit của biểu mẫu và gọi hàm saveForm
+	document.getElementById('createProfileForm').addEventListener('submit', saveForm);
+
+	function updateForm() {
+		// Ngăn chặn hành động mặc định của nút submit
+		event.preventDefault();
+
+		// Lấy ra các giá trị từ các trường trong form
+		var parentElement = document.getElementById('createProfileForm');
+		var createDate = parentElement.querySelector('#CreateDate').value;
+		var startDate = parentElement.querySelector('#StartDate').value;
+		var endDate = parentElement.querySelector('#EndDate').value;
+		var description = parentElement.querySelector('#Description').value;
+		var amount = parentElement.querySelector('#Amount').value;
+		var conditions = parentElement.querySelector('#Conditions').value;
+		var percentDiscount = parentElement.querySelector('#PercentDiscount').value;
+
+		// Kiểm tra xem các trường có bị bỏ trống không
+		if (!createDate || !startDate || !endDate || !description || !amount || !conditions || !percentDiscount) {
+			// Hiển thị thông báo lỗi nếu có trường nào bị bỏ trống
+			showNotification("Vui lòng điền đầy đủ thông tin vào các trường", "warning");
+			return; // Ngăn không cho tiếp tục thực hiện lưu form
+		}
+
+		// Kiểm tra ngày hết hạn phải sau ngày bắt đầu
+		if (new Date(endDate) <= new Date(startDate)) {
+			showNotification("Ngày hết hạn phải sau ngày bắt đầu", "warning");
+			return;
+		}
+
+		var formData = new FormData(document.getElementById('updateProfileForm'));
+
+		Swal.fire({
+			title: 'Xác nhận',
+			text: 'Bạn có chắc chắn muốn Cập nhật bản ghi này ?',
+			icon: 'question',
+			showCancelButton: true,
+			confirmButtonText: 'Có',
+			cancelButtonText: 'Không'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				// User confirmed, perform the request
+				performUpdateRequest(formData);
+			} else {
+				// User canceled, do nothing
+				// Swal.fire('Cancelled', 'Your action has been cancelled', 'info');
+			}
+		});
+
+		event.preventDefault(); // Di chuyển lệnh này xuống phía dưới
+
+	}
+
+	function performUpdateRequest(formData) {
+		var guid = "@(voucher?.Any() == true ? voucher.First().ID.ToString() : Guid.Empty.ToString())";
+		$.ajax({
+			url: '/Voucher/Update?id=' + guid,
+			type: 'PUT',
+			data: formData,
+			contentType: false,
+			processData: false,
+			success: function (results) {
+				showNotification("Cập nhật thành công", "success");
+				document.getElementById('updateProfileForm').reset();
+
+				updateTable();
+			},
+			error: function () {
+				showNotification("Lỗi hệ thống", "error");
+			}
+		});
+	}
+
+	function deleteForm(id) {
+		Swal.fire({
+			title: 'Xác nhận',
+			text: 'Bạn có chắc chắn muốn Xóa bản ghi này ?',
+			icon: 'question',
+			showCancelButton: true,
+			confirmButtonText: 'Có',
+			cancelButtonText: 'Không'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				// User confirmed, perform the request
+				performDeleteRequest(id);
+			} else {
+				// User canceled, do nothing
+				// Swal.fire('Cancelled', 'Your action has been cancelled', 'info');
+			}
+		});
+
+		return false; // Return false to prevent the default behavior of the anchor tag
+	}
+
+	function performDeleteRequest(id) {
+		$.ajax({
+			url: '/Voucher/Delete?id=' + id,
+			type: 'DELETE',
+			contentType: 'application/json',
+			success: function (results) {
+				if (results.success) {
+					showNotification("Xóa thành công", "success");
+					updateTable(); // Update the table after successful deletion
+				} else {
+					showNotification("Không thể xóa bản ghi", "error");
+				}
+			},
+			error: function () {
+				showNotification("Lỗi hệ thống", "error");
+			}
+		});
+	}
+
+	function showNotification(message, type) {
+		// Implement your notification logic here (e.g., using SweetAlert)
+		Swal.fire({
+			title: message,
+			icon: type
+		});
+	}
+
+	function updateTable() {
+		$.ajax({
+			url: '/Voucher/GetAllVoucher',
+			type: 'GET',
+			success: function (data) {
+				var table = $('#tableBody');
+				table.empty(); // Xóa toàn bộ nội dung của bảng
+
+				// Khởi tạo lại bảng với dữ liệu mới
+				var newTable = '<table id="dataTable" class="table table-hover">' +
+					'<thead>' +
+					'<tr>' +
+					'<th>Ngày Khởi Tạo</th>' +
+					'<th>Ngày Bắt Đầu</th>' +
+					'<th>Ngày Kết Thúc</th>' +
+					'<th>Mô Tả</th>' +
+					'<th>Giá</th>' +
+					'<th>Điều kiện cần</th>' +
+					'<th>Phần trăm giảm</th>' +
+					'<th>Trạng thái</th>' +
+					'<th></th>' +
+					'</tr>' +
+					'</thead>' +
+					'<tbody>';
+				if (data && data.length > 0) {
+					data.forEach(function (item) {
+						var createDate = new Date(item.createDate).toLocaleDateString('vi-VN');
+						var startDate = new Date(item.startDate).toLocaleDateString('vi-VN');
+						var endDate = new Date(item.endDate).toLocaleDateString('vi-VN');
+
+						var newRow = '<tr>' +
+							'<td>' + createDate + '</td>' +
+							'<td>' + startDate + '</td>' +
+							'<td>' + endDate + '</td>' +
+							'<td>' + item.description + '</td>' +
+							'<td>' + item.amount + '</td>' +
+							'<td>' + item.conditions  + '</td>' +
+							'<td>' + item.percentDiscount + '</td>' +
+							'<td>' + (item.status === 0 ? 'Hoạt Động' : 'Hết Hạn') + '</td>' +
+							'<td>' +
+							'<a href="/Voucher/Index/' + item.guid + '" class="btn btn-success" title="Chi tiết" style="margin-right: 10px;">' +
+							'<i class="bx bxs-detail"></i>' +
+							'</a>' +
+							'<a id="deleteProfileForm" class="btn btn-danger" onclick="deleteForm(\'' + item.guid + '\')" title="Xóa">' +
+							'<i class="bx bxs-trash-alt"></i>' +
+							'</a>' +
+							'</td>' +
+							'</tr>';
+						newTable += newRow;
+					});
+				} else {
+					// Nếu không có dữ liệu, hiển thị thông báo
+					newTable += '<tr><td colspan="3">No data available</td></tr>';
+				}
+
+				newTable += '</tbody></table>';
+
+				table.append(newTable);
+
+				// Khởi tạo lại DataTables cho bảng mới
+				$('#dataTable').DataTable({
+					// Các cài đặt DataTables, bao gồm cài đặt phân trang
+					"paging": true,
+					"lengthMenu": [5, 10, 15, 20, 25], // Define options for the number of records per page
+					"pageLength": 10, // Initial records per page
+					"searching": true, // Enable search feature
+					"language": {
+						"searchPlaceholder": "Search.."
+					},
+					"initComplete": function (settings, json) {
+						setTimeout(function () {
+							$('.dt-search label').remove();
+							applyCustomStyles();
+						}, 100);
+					}
+					// Các cài đặt khác...
+				});
+				$('.datatable-top').remove();
+				$('.datatable-bottom').remove();
+			},
+			error: function (xhr, status, error) {
+				// Xử lý lỗi AJAX
+				console.log(xhr.responseText); // Ghi log phản hồi lỗi
+				showNotification("Lỗi khi tải dữ liệu bảng", "error");
+			}
+		});
+	}
+
+	function applyCustomStyles() {
+		// Add your custom CSS styling here
+		// For example:
+		$('#dataTable').addClass('datatable');
+		$('.dt-layout-row').addClass('datatable-top');
+		$('.dt-layout-table').addClass('datatable-container');
+		$('#dt-length-0').addClass('datatable-selector');
+		$('#dt-search-0').addClass('datatable-input');
+		$('.dt-paging').addClass('datatable-pagination');
+
+		// Add more styling as needed...
+	}
+		document.addEventListener('DOMContentLoaded', () => {
+		// Đảm bảo thư viện được khởi chạy sau khi DOM sẵn sàng
+		const result = window.getjQuery && window.getjQuery();
+		console.log(result); // Kiểm tra hoặc sử dụng kết quả
+	});
+
+		if (!document.body) {
+		// Hoãn việc khởi chạy thư viện cho đến khi DOM được tải
+		document.addEventListener('DOMContentLoaded', () => {
+			const result = window.getjQuery && window.getjQuery();
+			console.log(result);
+		});
+	} else {
+		// Thư viện đã sẵn sàng để sử dụng
+		const result = window.getjQuery && window.getjQuery();
+		console.log(result);
+	}
+
+</script>
+
+
